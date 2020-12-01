@@ -17,3 +17,9 @@ use Illuminate\Support\Facades\Route;
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
+
+Route::get('peakflow', 'PeakflowController@index');
+Route::get('peakflow/{user}', 'PeakflowController@getPeakflowUser'); 
+Route::post('peakflow', 'PeakflowController@create');
+Route::put('peakflow/{peakflow}', 'PeakflowController@update');
+Route::delete('peakflow/{peakflow}', 'PeakflowController@delete');
