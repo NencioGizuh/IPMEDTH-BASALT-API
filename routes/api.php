@@ -23,3 +23,9 @@ Route::post('register','AuthController@register');
 Route::post('login','AuthController@login');
 Route::post('refresh', 'AuthController@refresh');
 Route::middleware('auth:api')->post('logout', 'AuthController@logout');
+
+Route::get('peakflow', 'PeakflowController@index');
+Route::get('peakflow/{user}', 'PeakflowController@getPeakflowUser'); 
+Route::post('peakflow', 'PeakflowController@create');
+Route::put('peakflow/{peakflow}', 'PeakflowController@update');
+Route::delete('peakflow/{peakflow}', 'PeakflowController@delete');
