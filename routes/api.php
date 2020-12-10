@@ -2,6 +2,7 @@
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
+use Illuminate\Auth\Middleware;
 
 /*
 |--------------------------------------------------------------------------
@@ -17,6 +18,11 @@ use Illuminate\Support\Facades\Route;
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
+
+Route::post('register','AuthController@register');
+Route::post('login','AuthController@login');
+Route::post('refresh', 'AuthController@refresh');
+Route::middleware('auth:api')->post('logout', 'AuthController@logout');
 
 Route::get('peakflow', 'PeakflowController@index');
 Route::get('peakflow/{user}', 'PeakflowController@getPeakflowUser'); 
