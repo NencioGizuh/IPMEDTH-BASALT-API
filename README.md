@@ -236,6 +236,15 @@ Headers:
 Content-type: application/json
 Authorization: Bearer [access_token]
 
+Body:
+date: [date]
+time: [time]
+measurement_one: [integer]
+measurement_two: [integer]
+measurement_three: [integer]
+taken_medicines: [boolean]
+explanation: [string]
+
 Response:
 
 ```
@@ -262,6 +271,15 @@ URL: http://localhost:8000/api/peakflow/{peakflow_id}
 Headers:
 Content-type: application/json
 Authorization: Bearer [access_token]
+
+Body (optional):
+date: [date]
+time: [time]
+measurement_one: [integer]
+measurement_two: [integer]
+measurement_three: [integer]
+taken_medicines: [boolean]
+explanation: [string]
 
 Response:
 
