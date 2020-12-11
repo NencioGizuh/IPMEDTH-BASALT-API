@@ -28,3 +28,8 @@ Route::middleware('auth:api')->get('getpeakflowuser', 'PeakflowController@index'
 Route::middleware('auth:api')->post('createpeakflow', 'PeakflowController@create');
 Route::middleware('auth:api')->put('updatepeakflow/{id}', 'PeakflowController@update');
 Route::middleware('auth:api')->delete('deletepeakflow/{id}', 'PeakflowController@delete');
+
+Route::middleware('auth:api')->get('getactionplanuser', 'ActionPlanController@index');
+Route::middleware('auth:api')->post('createactionplan', 'ActionPlanController@create');
+Route::middleware('auth:api')->put('updateactionplan', 'ActionPlanController@update');
+Route::middleware('auth:api')->delete('deleteactionplan', 'ActionPlanController@delete');

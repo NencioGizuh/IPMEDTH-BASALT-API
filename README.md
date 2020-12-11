@@ -306,3 +306,141 @@ URL: http://localhost:8000/api/deletepeakflow/{peakflow_id}
 
 Headers:
 Authorization: Bearer [access_token]
+
+# Actionplan ophalen van user
+
+Type: GET
+URL: http://localhost:8000/api/getactionplanuser
+
+Headers:
+Authorization: Bearer [access_token]
+
+Response:
+
+```
+[
+    {
+        "id": 3,
+        "user_id": 2,
+        "zone_green_peakflow_before_medicines": 400,
+        "zone_green_peakflow_after_medicines": 400,
+        "zone_green_explanation": null,
+        "zone_yellow_peakflow_below": 3423,
+        "zone_yellow_peakflow_above": 234,
+        "zone_yellow_medicines": null,
+        "zone_yellow_explanation": null,
+        "phonenumber_gp": "0612345678",
+        "phonenumber_lung_specialist": "0612345678",
+        "zone_orange_explanation": null,
+        "zone_red_peakflow": 200,
+        "zone_red_medicines": null,
+        "zone_red_explanation": null,
+        "created_at": "2020-12-11T15:42:03.000000Z",
+        "updated_at": "2020-12-11T15:42:16.000000Z"
+    }
+]
+```
+
+# Nieuw actionplan aanmaken
+
+Type: POST
+URL: http://localhost:8000/api/createactionplan
+
+Headers:
+Content-type: application/json
+Authorization: Bearer [access_token]
+
+Body:
+zone_green_peakflow_before_medicines: [integer|required]
+zone_green_peakflow_after_medicines: [integer|required]
+zone_green_explanation: [string]
+zone_yellow_peakflow_below: [integer|required]
+zone_yellow_peakflow_above: [integer|required]
+zone_yellow_medicines: [string]
+zone_yellow_explanation: [string]
+phonenumber_gp: [string]
+phonenumber_lung_specialist: [string]
+zone_orange_explanation: [string]
+zone_red_peakflow: [integer|required]
+zone_red_medicines: [string]
+zone_red_explanation: [string]
+
+Response:
+
+```
+{
+    "user_id": 2,
+    "zone_green_peakflow_before_medicines": 400,
+    "zone_green_peakflow_after_medicines": 400,
+    "zone_green_explanation": null,
+    "zone_yellow_peakflow_below": 3423,
+    "zone_yellow_peakflow_above": 234,
+    "zone_yellow_medicines": null,
+    "zone_yellow_explanation": null,
+    "phonenumber_gp": "0612345678",
+    "phonenumber_lung_specialist": "0687654321",
+    "zone_orange_explanation": null,
+    "zone_red_peakflow": 200,
+    "zone_red_medicines": null,
+    "zone_red_explanation": null,
+    "updated_at": "2020-12-11T15:42:03.000000Z",
+    "created_at": "2020-12-11T15:42:03.000000Z",
+    "id": 3
+}
+```
+
+# Actionplan updaten
+
+Type: PUT
+URL: http://localhost:8000/api/updateactionplan
+
+Headers:
+Content-type: application/json
+Authorization: Bearer [access_token]
+
+Body (optional):
+zone_green_peakflow_before_medicines: [integer]
+zone_green_peakflow_after_medicines: [integer]
+zone_green_explanation: [string]
+zone_yellow_peakflow_below: [integer]
+zone_yellow_peakflow_above: [integer]
+zone_yellow_medicines: [string]
+zone_yellow_explanation: [string]
+phonenumber_gp: [string]
+phonenumber_lung_specialist: [string]
+zone_orange_explanation: [string]
+zone_red_peakflow: [integer]
+zone_red_medicines: [string]
+zone_red_explanation: [string]
+
+Response:
+
+```
+{
+    "id": 3,
+    "user_id": 2,
+    "zone_green_peakflow_before_medicines": 400,
+    "zone_green_peakflow_after_medicines": 400,
+    "zone_green_explanation": null,
+    "zone_yellow_peakflow_below": 3423,
+    "zone_yellow_peakflow_above": 234,
+    "zone_yellow_medicines": null,
+    "zone_yellow_explanation": null,
+    "phonenumber_gp": "0612345678",
+    "phonenumber_lung_specialist": "0612345678",
+    "zone_orange_explanation": null,
+    "zone_red_peakflow": 200,
+    "zone_red_medicines": null,
+    "zone_red_explanation": null,
+    "created_at": "2020-12-11T15:42:03.000000Z",
+    "updated_at": "2020-12-11T15:42:16.000000Z"
+}
+```
+
+# Actionplan verwijderen
+
+Type: DELETE
+URL: http://localhost:8000/api/deleteactionplan
+
+Headers:
+Authorization: Bearer [access_token]
