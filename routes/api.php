@@ -24,7 +24,7 @@ Route::post('login','AuthController@login');
 Route::post('refresh', 'AuthController@refresh');
 Route::middleware('auth:api')->post('logout', 'AuthController@logout');
 
-Route::middleware('auth:api')->get('peakflow', 'PeakflowController@index');
-Route::middleware('auth:api')->post('peakflow', 'PeakflowController@create');
-Route::middleware('auth:api')->put('peakflow/{id}', 'PeakflowController@update');
-Route::middleware('auth:api')->delete('peakflow/{id}', 'PeakflowController@delete');
+Route::middleware('auth:api')->get('getpeakflowuser', 'PeakflowController@index');
+Route::middleware('auth:api')->post('createpeakflow', 'PeakflowController@create');
+Route::middleware('auth:api')->put('updatepeakflow/{id}', 'PeakflowController@update');
+Route::middleware('auth:api')->delete('deletepeakflow/{id}', 'PeakflowController@delete');

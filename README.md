@@ -202,7 +202,7 @@ Response:
 # Peakflow ophalen van user
 
 Type: GET
-URL: http://localhost:8000/api/peakflow
+URL: http://localhost:8000/api/getpeakflowuser
 
 Headers:
 Authorization: Bearer [access_token]
@@ -230,7 +230,7 @@ Response:
 # Nieuwe peakflow aanmaken
 
 Type: POST
-URL: http://localhost:8000/api/peakflow
+URL: http://localhost:8000/api/createpeakflow
 
 Headers:
 Content-type: application/json
@@ -266,7 +266,7 @@ Response:
 # Peakflow updaten
 
 Type: PUT
-URL: http://localhost:8000/api/peakflow/{peakflow_id}
+URL: http://localhost:8000/api/updatepeakflow/{peakflow_id}
 
 Headers:
 Content-type: application/json
@@ -302,7 +302,7 @@ Response:
 # Peakflow verwijderen
 
 Type: DELETE
-URL: http://localhost:8000/api/peakflow/{peakflow_id}
+URL: http://localhost:8000/api/deletepeakflow/{peakflow_id}
 
 Headers:
 Authorization: Bearer [access_token]
