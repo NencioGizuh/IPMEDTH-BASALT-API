@@ -28,25 +28,33 @@ class PeakflowController extends Controller
 
     public function update(Request $request, $id) {
         $user_id = $request->user()->id;
-        $peakflow = Peakflow::findOrFail($id);
+        $peakflow = Peakflow::find($id);
+
+        if(!$peakflow) {
+            return response()->json("Not Found", 404);
+        }
 
         if ($peakflow["user_id"] === $user_id) {
             $peakflow->update($request->all());
             return response()->json($peakflow, 200);
         } else {
-            return response()->json("unauthorized", 401);
+            return response()->json("Unauthorized", 401);
         }
     }
 
     public function delete(Request $request, $id) {
         $user_id = $request->user()->id;
-        $peakflow = Peakflow::findOrFail($id);
+        $peakflow = Peakflow::find($id);
+
+        if(!$peakflow) {
+            return response()->json("Not Found", 404);
+        }
 
         if ($peakflow["user_id"] === $user_id) {
             $peakflow->delete();
             return response()->json(null, 204);
         } else {
-            return response()->json("unauthorized", 401);
+            return response()->json("Unauthorized", 401);
         }
     }
 }
