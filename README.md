@@ -106,19 +106,19 @@ Je kan gebruik maken van
 
 # Registreren
 
-Type: POST
+Type: POST\
 URL: http://localhost:8000/api/register
 
-Headers:
+Headers:\
 Accept: application/json
 
-Body:
-name: [name_of_person]
-patient_number: [integer_value]
-email: [email-address]
-password: [password]
-password_confirmation: [password]
-age: [integer_value]
+Body:\
+name: [name_of_person]\
+patient_number: [integer_value]\
+email: [email-address]\
+password: [password]\
+password_confirmation: [password]\
+age: [integer_value]\
 height: [integer_value]
 
 Response:
@@ -138,14 +138,14 @@ Response:
 
 # Inloggen
 
-Type: POST
+Type: POST\
 URL: http://localhost:8000/api/login
 
-Headers:
+Headers:\
 Accept: application/json
 
-Body:
-username: [email]
+Body:\
+username: [email]\
 password: [password]
 
 Response
@@ -161,11 +161,11 @@ Response
 
 # Uitloggen
 
-Type: GET
+Type: GET\
 URL: http://localhost:8000/api/logout
 
-Headers:
-Accept: application/json
+Headers:\
+Accept: application/json\
 Bearer: bearer [access_token]
 
 Response:
@@ -176,11 +176,11 @@ Logged out succesfully
 
 # Data vergaren van gebruikers
 
-Type: POST
+Type: POST\
 URL: http://localhost:8000/api/user
 
-Headers:
-Accept: application/json
+Headers:\
+Accept: application/json\
 Bearer: bearer [access_token]
 
 Response:
@@ -201,10 +201,10 @@ Response:
 
 # Peakflow ophalen van user
 
-Type: GET
+Type: GET\
 URL: http://localhost:8000/api/getpeakflowuser
 
-Headers:
+Headers:\
 Authorization: Bearer [access_token]
 
 Response:
@@ -229,20 +229,20 @@ Response:
 
 # Nieuwe peakflow aanmaken
 
-Type: POST
+Type: POST\
 URL: http://localhost:8000/api/createpeakflow
 
-Headers:
-Content-type: application/json
+Headers:\
+Content-type: application/json\
 Authorization: Bearer [access_token]
 
-Body:
-date: [date]
-time: [time]
-measurement_one: [integer]
-measurement_two: [integer]
-measurement_three: [integer]
-taken_medicines: [boolean]
+Body:\
+date: [date]\
+time: [time]\
+measurement_one: [integer]\
+measurement_two: [integer]\
+measurement_three: [integer]\
+taken_medicines: [boolean]\
 explanation: [string]
 
 Response:
@@ -265,20 +265,20 @@ Response:
 
 # Peakflow updaten
 
-Type: PUT
+Type: PUT\
 URL: http://localhost:8000/api/updatepeakflow/{peakflow_id}
 
-Headers:
-Content-type: application/json
+Headers:\
+Content-type: application/json\
 Authorization: Bearer [access_token]
 
-Body (optional):
-date: [date]
-time: [time]
-measurement_one: [integer]
-measurement_two: [integer]
-measurement_three: [integer]
-taken_medicines: [boolean]
+Body (optional):\
+date: [date]\
+time: [time]\
+measurement_one: [integer]\
+measurement_two: [integer]\
+measurement_three: [integer]\
+taken_medicines: [boolean]\
 explanation: [string]
 
 Response:
@@ -301,18 +301,18 @@ Response:
 
 # Peakflow verwijderen
 
-Type: DELETE
+Type: DELETE\
 URL: http://localhost:8000/api/deletepeakflow/{peakflow_id}
 
-Headers:
+Headers:\
 Authorization: Bearer [access_token]
 
 # Actionplan ophalen van user
 
-Type: GET
+Type: GET\
 URL: http://localhost:8000/api/getactionplanuser
 
-Headers:
+Headers:\
 Authorization: Bearer [access_token]
 
 Response:
@@ -343,26 +343,26 @@ Response:
 
 # Nieuw actionplan aanmaken
 
-Type: POST
+Type: POST\
 URL: http://localhost:8000/api/createactionplan
 
-Headers:
-Content-type: application/json
+Headers:\
+Content-type: application/json\
 Authorization: Bearer [access_token]
 
-Body:
-zone_green_peakflow_before_medicines: [integer|required]
-zone_green_peakflow_after_medicines: [integer|required]
-zone_green_explanation: [string]
-zone_yellow_peakflow_below: [integer|required]
-zone_yellow_peakflow_above: [integer|required]
-zone_yellow_medicines: [string]
-zone_yellow_explanation: [string]
-phonenumber_gp: [string]
-phonenumber_lung_specialist: [string]
-zone_orange_explanation: [string]
-zone_red_peakflow: [integer|required]
-zone_red_medicines: [string]
+Body:\
+zone_green_peakflow_before_medicines: [integer|required]\
+zone_green_peakflow_after_medicines: [integer|required]\
+zone_green_explanation: [string]\
+zone_yellow_peakflow_below: [integer|required]\
+zone_yellow_peakflow_above: [integer|required]\
+zone_yellow_medicines: [string]\
+zone_yellow_explanation: [string]\
+phonenumber_gp: [string]\
+phonenumber_lung_specialist: [string]\
+zone_orange_explanation: [string]\
+zone_red_peakflow: [integer|required]\
+zone_red_medicines: [string]\
 zone_red_explanation: [string]
 
 Response:
@@ -391,26 +391,26 @@ Response:
 
 # Actionplan updaten
 
-Type: PUT
+Type: PUT\
 URL: http://localhost:8000/api/updateactionplan
 
-Headers:
-Content-type: application/json
+Headers:\
+Content-type: application/json\
 Authorization: Bearer [access_token]
 
-Body (optional):
-zone_green_peakflow_before_medicines: [integer]
-zone_green_peakflow_after_medicines: [integer]
-zone_green_explanation: [string]
-zone_yellow_peakflow_below: [integer]
-zone_yellow_peakflow_above: [integer]
-zone_yellow_medicines: [string]
-zone_yellow_explanation: [string]
-phonenumber_gp: [string]
-phonenumber_lung_specialist: [string]
-zone_orange_explanation: [string]
-zone_red_peakflow: [integer]
-zone_red_medicines: [string]
+Body (optional):\
+zone_green_peakflow_before_medicines: [integer]\
+zone_green_peakflow_after_medicines: [integer]\
+zone_green_explanation: [string]\
+zone_yellow_peakflow_below: [integer]\
+zone_yellow_peakflow_above: [integer]\
+zone_yellow_medicines: [string]\
+zone_yellow_explanation: [string]\
+phonenumber_gp: [string]\
+phonenumber_lung_specialist: [string]\
+zone_orange_explanation: [string]\
+zone_red_peakflow: [integer]\
+zone_red_medicines: [string]\
 zone_red_explanation: [string]
 
 Response:
@@ -439,18 +439,18 @@ Response:
 
 # Actionplan verwijderen
 
-Type: DELETE
+Type: DELETE\
 URL: http://localhost:8000/api/deleteactionplan
 
-Headers:
+Headers:\
 Authorization: Bearer [access_token]
 
 # BreathingExercises ophalen van user
 
-Type: GET
+Type: GET\
 URL: http://localhost:8000/api/getbreathingexercisesuser
 
-Headers:
+Headers:\
 Authorization: Bearer [access_token]
 
 Response:
@@ -476,21 +476,21 @@ Response:
 
 # Nieuwe breathing exercise aanmaken
 
-Type: POST
+Type: POST\
 URL: http://localhost:8000/api/createbreathingexercise
 
-Headers:
-Content-type: application/json
+Headers:\
+Content-type: application/json\
 Authorization: Bearer [access_token]
 
-Body:
-date: [date|required]
-cp_measurement_one: [integer]
-cp_measurement_two: [integer]
-interval: [boolean]
-buteyko: [boolean]
-papworth: [boolean]
-middenrifspier: [boolean]
+Body:\
+date: [date|required]\
+cp_measurement_one: [integer]\
+cp_measurement_two: [integer]\
+interval: [boolean]\
+buteyko: [boolean]\
+papworth: [boolean]\
+middenrifspier: [boolean]\
 wim_hof: [boolean]
 
 Response:
@@ -514,21 +514,21 @@ Response:
 
 # Breathing exercise updaten
 
-Type: PUT
+Type: PUT\
 URL: http://localhost:8000/api/updatebreathingexercise/{id}
 
-Headers:
-Content-type: application/json
+Headers:\
+Content-type: application/json\
 Authorization: Bearer [access_token]
 
-Body (optional):
-date: [date]
-cp_measurement_one: [integer]
-cp_measurement_two: [integer]
-interval: [boolean]
-buteyko: [boolean]
-papworth: [boolean]
-middenrifspier: [boolean]
+Body (optional):\
+date: [date]\
+cp_measurement_one: [integer]\
+cp_measurement_two: [integer]\
+interval: [boolean]\
+buteyko: [boolean]\
+papworth: [boolean]\
+middenrifspier: [boolean]\
 wim_hof: [boolean]
 
 Response:
@@ -552,8 +552,8 @@ Response:
 
 # Breathing exercise verwijderen
 
-Type: DELETE
+Type: DELETE\
 URL: http://localhost:8000/api/deletebreathingexercise/{id}
 
-Headers:
+Headers:\
 Authorization: Bearer [access_token]
