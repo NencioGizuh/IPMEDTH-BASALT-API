@@ -8,7 +8,7 @@ class Trigger extends Model
 {
     protected $fillable = [
         'user_id',
-        'tabacco_smoke',
+        'tobacco_smoke',
         'dust_mites', 
         'air_pollution', 
         'pets', 

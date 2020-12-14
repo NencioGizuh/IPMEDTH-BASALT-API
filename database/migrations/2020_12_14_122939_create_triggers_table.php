@@ -17,7 +17,7 @@ class CreateTriggersTable extends Migration
             $table->id();
             $table->bigInteger('user_id')->unsigned();
             $table->foreign('user_id')->references('id')->on('users');
-            $table->boolean("tabacco_smoke")->default(false);
+            $table->boolean("tobacco_smoke")->default(false);
             $table->boolean("dust_mites")->default(false);
             $table->boolean("air_pollution")->default(false);
             $table->boolean("pets")->default(false);

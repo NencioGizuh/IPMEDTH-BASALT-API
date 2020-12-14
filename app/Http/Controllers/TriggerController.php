@@ -30,7 +30,7 @@ class TriggerController extends Controller
 
         $newTrigger = Trigger::create([
             'user_id' => $request->user()->id,
-            'tabacco_smoke' => request('tabacco_smoke', false),
+            'tobacco_smoke' => request('tobacco_smoke', false),
             'dust_mites' => request('dust_mites', false),
             'air_pollution' => request('air_pollution', false),
             'pets' => request('pets', false),

@@ -572,7 +572,7 @@ Response:
 {
     "id": 1,
     "user_id": 1,
-    "tabacco_smoke": 0,
+    "tobacco_smoke": 0,
     "dust_mites": 1,
     "air_pollution": 0,
     "pets": 1,
@@ -598,7 +598,7 @@ Content-type: application/json\
 Authorization: Bearer [access_token]
 
 Body:\
-tabacco_smoke: [boolean]\
+tobacco_smoke: [boolean]\
 dust_mites: [boolean]\
 air_pollution: [boolean]\
 pets: [boolean]\
@@ -616,7 +616,7 @@ Response:
 {
     "id": 2,
     "user_id": 1,
-    "tabacco_smoke": true,
+    "tobacco_smoke": true,
     "dust_mites": true,
     "air_pollution": false,
     "pets": true,
@@ -642,7 +642,7 @@ Content-type: application/json\
 Authorization: Bearer [access_token]
 
 Body (optional):\
-tabacco_smoke: [boolean]\
+tobacco_smoke: [boolean]\
 dust_mites: [boolean]\
 air_pollution: [boolean]\
 pets: [boolean]\
@@ -660,7 +660,7 @@ Response:
 {
     "id": 1,
     "user_id": 1,
-    "tabacco_smoke": 0,
+    "tobacco_smoke": 0,
     "dust_mites": true,
     "air_pollution": false,
     "pets": true,
