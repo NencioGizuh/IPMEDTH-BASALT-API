@@ -444,3 +444,116 @@ URL: http://localhost:8000/api/deleteactionplan
 
 Headers:
 Authorization: Bearer [access_token]
+
+# BreathingExercises ophalen van user
+
+Type: GET
+URL: http://localhost:8000/api/getbreathingexercisesuser
+
+Headers:
+Authorization: Bearer [access_token]
+
+Response:
+
+```
+[
+    {
+        "id": 6,
+        "user_id": 1,
+        "date": "2020-12-13",
+        "cp_measurement_one": null,
+        "cp_measurement_two": null,
+        "interval": 1,
+        "buteyko": 0,
+        "papworth": 1,
+        "middenrifspier": 0,
+        "wim_hof": 0,
+        "created_at": "2020-12-14T09:18:03.000000Z",
+        "updated_at": "2020-12-14T09:23:38.000000Z"
+    }
+]
+```
+
+# Nieuwe breathing exercise aanmaken
+
+Type: POST
+URL: http://localhost:8000/api/createbreathingexercise
+
+Headers:
+Content-type: application/json
+Authorization: Bearer [access_token]
+
+Body:
+date: [date|required]
+cp_measurement_one: [integer]
+cp_measurement_two: [integer]
+interval: [boolean]
+buteyko: [boolean]
+papworth: [boolean]
+middenrifspier: [boolean]
+wim_hof: [boolean]
+
+Response:
+
+```
+{
+    "user_id": 1,
+    "date": "2020-12-14",
+    "cp_measurement_one": null,
+    "cp_measurement_two": null,
+    "interval": true,
+    "buteyko": false,
+    "papworth": false,
+    "middenrifspier": false,
+    "wim_hof": false,
+    "updated_at": "2020-12-14T09:44:54.000000Z",
+    "created_at": "2020-12-14T09:44:54.000000Z",
+    "id": 8
+}
+```
+
+# Breathing exercise updaten
+
+Type: PUT
+URL: http://localhost:8000/api/updatebreathingexercise/{id}
+
+Headers:
+Content-type: application/json
+Authorization: Bearer [access_token]
+
+Body (optional):
+date: [date]
+cp_measurement_one: [integer]
+cp_measurement_two: [integer]
+interval: [boolean]
+buteyko: [boolean]
+papworth: [boolean]
+middenrifspier: [boolean]
+wim_hof: [boolean]
+
+Response:
+
+```
+{
+    "id": 7,
+    "user_id": 1,
+    "date": "2020-12-13",
+    "cp_measurement_one": 12,
+    "cp_measurement_two": null,
+    "interval": 1,
+    "buteyko": 0,
+    "papworth": 1,
+    "middenrifspier": 0,
+    "wim_hof": 0,
+    "created_at": "2020-12-14T09:43:26.000000Z",
+    "updated_at": "2020-12-14T09:44:28.000000Z"
+}
+```
+
+# Breathing exercise verwijderen
+
+Type: DELETE
+URL: http://localhost:8000/api/deletebreathingexercise/{id}
+
+Headers:
+Authorization: Bearer [access_token]

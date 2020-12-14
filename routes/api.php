@@ -33,3 +33,8 @@ Route::middleware('auth:api')->get('getactionplanuser', 'ActionPlanController@in
 Route::middleware('auth:api')->post('createactionplan', 'ActionPlanController@create');
 Route::middleware('auth:api')->put('updateactionplan', 'ActionPlanController@update');
 Route::middleware('auth:api')->delete('deleteactionplan', 'ActionPlanController@delete');
+
+Route::middleware('auth:api')->get('getbreathingexercisesuser', 'BreathingExerciseController@index');
+Route::middleware('auth:api')->post('createbreathingexercise', 'BreathingExerciseController@create');
+Route::middleware('auth:api')->put('updatebreathingexercise/{id}', 'BreathingExerciseController@update');
+Route::middleware('auth:api')->delete('deletebreathingexercise/{id}', 'BreathingExerciseController@delete');
