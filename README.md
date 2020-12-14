@@ -557,3 +557,129 @@ URL: http://localhost:8000/api/deletebreathingexercise/{id}
 
 Headers:\
 Authorization: Bearer [access_token]
+
+# Triggers ophalen van user
+
+Type: GET\
+URL: http://localhost:8000/api/gettriggersuser
+
+Headers:\
+Authorization: Bearer [access_token]
+
+Response:
+
+```
+{
+    "id": 1,
+    "user_id": 1,
+    "tabacco_smoke": 0,
+    "dust_mites": 1,
+    "air_pollution": 0,
+    "pets": 1,
+    "fungi": 0,
+    "fire_smoke": 1,
+    "infections": 1,
+    "effort": 0,
+    "weather_conditions": 0,
+    "hyperventilation": 1,
+    "pollen": 0,
+    "created_at": "2020-12-14T12:45:43.000000Z",
+    "updated_at": "2020-12-14T12:46:07.000000Z"
+}
+```
+
+# Nieuwe triggers aanmaken
+
+Type: POST\
+URL: http://localhost:8000/api/createtriggers
+
+Headers:\
+Content-type: application/json\
+Authorization: Bearer [access_token]
+
+Body:\
+tabacco_smoke: [boolean]\
+dust_mites: [boolean]\
+air_pollution: [boolean]\
+pets: [boolean]\
+fungi: [boolean]\
+fire_smoke: [boolean]\
+infections: [boolean]\
+effort: [boolean]\
+weather_conditions: [boolean]\
+hyperventilation: [boolean]\
+pollen: [boolean]
+
+Response:
+
+```
+{
+    "id": 2,
+    "user_id": 1,
+    "tabacco_smoke": true,
+    "dust_mites": true,
+    "air_pollution": false,
+    "pets": true,
+    "fungi": false,
+    "fire_smoke": true,
+    "infections": true,
+    "effort": false,
+    "weather_conditions": false,
+    "hyperventilation": true,
+    "pollen": false,
+    "created_at": "2020-12-14T12:49:15.000000Z",
+    "updated_at": "2020-12-14T12:55:38.000000Z"
+}
+```
+
+# Breathing exercise updaten
+
+Type: PUT\
+URL: http://localhost:8000/api/updatetriggers
+
+Headers:\
+Content-type: application/json\
+Authorization: Bearer [access_token]
+
+Body (optional):\
+tabacco_smoke: [boolean]\
+dust_mites: [boolean]\
+air_pollution: [boolean]\
+pets: [boolean]\
+fungi: [boolean]\
+fire_smoke: [boolean]\
+infections: [boolean]\
+effort: [boolean]\
+weather_conditions: [boolean]\
+hyperventilation: [boolean]\
+pollen: [boolean]
+
+Response:
+
+```
+{
+    "id": 1,
+    "user_id": 1,
+    "tabacco_smoke": 0,
+    "dust_mites": true,
+    "air_pollution": false,
+    "pets": true,
+    "fungi": false,
+    "fire_smoke": true,
+    "infections": true,
+    "effort": false,
+    "weather_conditions": false,
+    "hyperventilation": true,
+    "pollen": true,
+    "created_at": "2020-12-14T12:45:43.000000Z",
+    "updated_at": "2020-12-14T12:47:45.000000Z"
+}
+```
+
+# Triggers verwijderen
+
+Type: DELETE\
+URL: http://localhost:8000/api/deletetriggers
+
+Headers:\
+Authorization: Bearer [access_token]

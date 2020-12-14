@@ -38,3 +38,8 @@ Route::middleware('auth:api')->get('getbreathingexercisesuser', 'BreathingExerci
 Route::middleware('auth:api')->post('createbreathingexercise', 'BreathingExerciseController@create');
 Route::middleware('auth:api')->put('updatebreathingexercise/{id}', 'BreathingExerciseController@update');
 Route::middleware('auth:api')->delete('deletebreathingexercise/{id}', 'BreathingExerciseController@delete');
+
+Route::middleware('auth:api')->get('gettriggersuser', 'TriggerController@index');
+Route::middleware('auth:api')->post('createtriggers', 'TriggerController@create');
+Route::middleware('auth:api')->put('updatetriggers', 'TriggerController@update');
+Route::middleware('auth:api')->delete('deletetriggers', 'TriggerController@delete');
