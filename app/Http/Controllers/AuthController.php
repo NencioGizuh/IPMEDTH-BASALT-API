@@ -32,7 +32,7 @@ class AuthController extends Controller
             'height' => 'required|integer'
         ]);
 
-        return $user = User::create([
+        $user = User::create([
             'name' => request('name'),
             'patient_number' => request('patient_number'),
             'email' => request('email'),
@@ -40,6 +40,7 @@ class AuthController extends Controller
             'age' => request('age'),
             'height' => request('height'),
         ]);
+        return response()->json($user, 201);
     }
 
     public function login(Request $request)
