@@ -15,14 +15,13 @@ class CreatePeakflowsTable extends Migration
     {
         Schema::create('peakflows', function (Blueprint $table) {
             $table->increments("id");
-            // TODO: add user_id
             $table->date("date");
             $table->time("time");
             $table->integer("measurement_one");
             $table->integer("measurement_two");
             $table->integer("measurement_three");
             $table->boolean("taken_medicines");
-            $table->string("explanation");
+            $table->string("explanation")->nullable();
             $table->timestamps();
         });
     }
