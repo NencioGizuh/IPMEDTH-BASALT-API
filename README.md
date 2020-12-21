@@ -683,3 +683,329 @@ URL: http://localhost:8000/api/deletetriggers
 
 Headers:\
 Authorization: Bearer [access_token]
+
+# Alle medicaties ophalen
+
+Type: GET\
+URL: http://localhost:8000/api/getmedication
+
+Response:
+
+```
+[
+    {
+        "id": 1,
+        "name": "Salbutamol",
+        "type": "Luchtwegverwijders"
+    },
+    {
+        "id": 2,
+        "name": "Terbutaline",
+        "type": "Luchtwegverwijders"
+    },
+    {
+        "id": 3,
+        "name": "Ipratropium",
+        "type": "Luchtwegverwijders"
+    },
+    {
+        "id": 4,
+        "name": "Formoterol",
+        "type": "Luchtwegverwijders"
+    },
+    {
+        "id": 5,
+        "name": "Indacaterol",
+        "type": "Luchtwegverwijders"
+    },
+    {
+        "id": 6,
+        "name": "Salmeterol",
+        "type": "Luchtwegverwijders"
+    },
+    {
+        "id": 7,
+        "name": "Olodaterol",
+        "type": "Luchtwegverwijders"
+    },
+    {
+        "id": 8,
+        "name": "Tiotropium",
+        "type": "Luchtwegverwijders"
+    },
+    {
+        "id": 9,
+        "name": "Glycopyrronium",
+        "type": "Luchtwegverwijders"
+    },
+    {
+        "id": 10,
+        "name": "Aclidinium",
+        "type": "Luchtwegverwijders"
+    },
+    {
+        "id": 11,
+        "name": "Umeclidinium",
+        "type": "Luchtwegverwijders"
+    },
+    {
+        "id": 12,
+        "name": "Beclomethason",
+        "type": "Luchtwegbeschermers"
+    },
+    {
+        "id": 13,
+        "name": "Budesonide",
+        "type": "Luchtwegbeschermers"
+    },
+    {
+        "id": 14,
+        "name": "Ciclesonide",
+        "type": "Luchtwegbeschermers"
+    },
+    {
+        "id": 15,
+        "name": "Fluticasonpropionaat",
+        "type": "Luchtwegbeschermers"
+    },
+    {
+        "id": 16,
+        "name": "Corticosteroid Neusspray",
+        "type": "Neusspray"
+    }
+]
+```
+
+# Nieuwe medicijnen aanmaken
+
+Type: POST\
+URL: http://localhost:8000/api/createmedication
+
+Headers:\
+Content-type: application/json
+
+Body:\
+name: [string]\
+type: [string]
+
+Response:
+
+```
+{
+    "name": "testmedicijn",
+    "type": "testen",
+    "id": 18
+}
+```
+
+# Medicijn updaten (by id)
+
+Type: PUT\
+URL: http://localhost:8000/api/updatemedication/{id}
+
+Headers:\
+Content-type: application/json
+
+Body (optional):\
+name: [string]\
+type: [string]
+
+Response:
+
+```
+{
+    "id": 18,
+    "name": "NieuweNaam",
+    "type": "testen"
+}
+```
+
+# Medicijn verwijderen (by id)
+
+Type: DELETE\
+URL: http://localhost:8000/api/deletemedication/{id}
+
+# Alle medicaties van user ophalen
+
+Type: GET\
+URL: http://localhost:8000/api/getmedicationsuser
+
+Response:
+
+```
+[
+    {
+        "id": 1,
+        "user_id": 1,
+        "time": "12:00:00",
+        "medicine_id": 1,
+        "medication": {
+            "id": 1,
+            "name": "Salbutamol",
+            "type": "Luchtwegverwijders"
+        }
+    },
+    {
+        "id": 2,
+        "user_id": 1,
+        "time": "12:00:00",
+        "medicine_id": 6,
+        "medication": {
+            "id": 6,
+            "name": "Salmeterol",
+            "type": "Luchtwegverwijders"
+        }
+    },
+    {
+        "id": 3,
+        "user_id": 1,
+        "time": "12:00:00",
+        "medicine_id": 10,
+        "medication": {
+            "id": 10,
+            "name": "Aclidinium",
+            "type": "Luchtwegverwijders"
+        }
+    }
+]
+```
+
+# Nieuwe medicijn voor user aanmaken
+
+Type: POST\
+URL: http://localhost:8000/api/createmedicationsuser
+
+Headers:\
+Content-type: application/json\
+Authorization: Bearer [access_token]
+
+Body:\
+time: [time]\
+medicine_id: [number]
+
+Response:
+
+```
+{
+    "user_id": 1,
+    "time": "12:00",
+    "medicine_id": 16,
+    "id": 10
+}
+```
+
+# Medicijn user updaten (by id)
+
+Type: PUT\
+URL: http://localhost:8000/api/updatemedicationsuser/{id}
+
+Headers:\
+Content-type: application/json\
+Authorization: Bearer [access_token]
+
+Body (optional):\
+time: [time]\
+medicine_id: [number]
+
+Response:
+
+```
+{
+    "id": 3,
+    "user_id": 1,
+    "time": "12:00:00",
+    "medicine_id": 4
+}
+```
+
+# Medicijn user verwijderen (by id)
+
+Type: DELETE\
+URL: http://localhost:8000/api/deletemedicationsuser/{id}
+
+Headers:\
+Authorization: Bearer [access_token]
+
+# Alle ingenomen medicaties van user ophalen
+
+Type: GET\
+URL: http://localhost:8000/api/getmedicationsusertaken
+
+Response:
+
+```
+[
+    {
+        "id": 2,
+        "user_id": 1,
+        "date": "2020-12-21",
+        "time": "18:00:00",
+        "medicine_id": 3,
+        "medication": {
+            "id": 3,
+            "name": "Ipratropium",
+            "type": "Luchtwegverwijders"
+        }
+    }
+]
+```
+
+# Nieuwe medicijn voor user registreren
+
+Type: POST\
+URL: http://localhost:8000/api/createmedicationsusertaken
+
+Headers:\
+Content-type: application/json\
+Authorization: Bearer [access_token]
+
+Body:\
+time: [time]\
+date: [date]\
+medicine_id: [number]
+
+Response:
+
+```
+{
+    "user_id": 1,
+    "date": "2020-12-21",
+    "time": "18:00",
+    "medicine_id": 3,
+    "id": 2
+}
+```
+
+# Geregistreerde medicijn user updaten (by id)
+
+Type: PUT\
+URL: http://localhost:8000/api/updatemedicationsusertaken/{id}
+
+Headers:\
+Content-type: application/json\
+Authorization: Bearer [access_token]
+
+Body (optional):\
+time: [time]\
+date: [date]\
+medicine_id: [number]
+
+Response:
+
+```
+{
+    "id": 2,
+    "user_id": 1,
+    "date": "2020-12-20",
+    "time": "18:00:00",
+    "medicine_id": 3
+}
+```
+
+# Geregistreerde medicijn user verwijderen (by id)
+
+Type: DELETE\
+URL: http://localhost:8000/api/deletemedicationsusertaken/{id}
+
+Headers:\
+Authorization: Bearer [access_token]
