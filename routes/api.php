@@ -48,3 +48,8 @@ Route::get('getmedication', 'MedicationController@index');
 Route::post('createmedication', 'MedicationController@create');
 Route::put('updatemedication/{id}', 'MedicationController@update');
 Route::delete('deletemedication/{id}', 'MedicationController@delete');
+
+Route::middleware('auth:api')->get('getmedicationsuser', 'MedicationUserController@index');
+Route::middleware('auth:api')->post('createmedicationsuser', 'MedicationUserController@create');
+Route::middleware('auth:api')->put('updatemedicationsuser/{id}', 'MedicationUserController@update');
+Route::middleware('auth:api')->delete('deletemedicationsuser/{id}', 'MedicationUserController@delete');

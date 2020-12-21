@@ -10,4 +10,10 @@ class Medication extends Model
         'name', 
         'type',
     ];
+
+    protected $visible = [
+        'id',
+        'name', 
+        'type',
+    ];
 }
