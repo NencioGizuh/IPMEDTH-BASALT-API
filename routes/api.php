@@ -43,3 +43,18 @@ Route::middleware('auth:api')->get('gettriggersuser', 'TriggerController@index')
 Route::middleware('auth:api')->post('createtriggers', 'TriggerController@create');
 Route::middleware('auth:api')->put('updatetriggers', 'TriggerController@update');
 Route::middleware('auth:api')->delete('deletetriggers', 'TriggerController@delete');
+
+Route::get('getmedication', 'MedicationController@index');
+Route::post('createmedication', 'MedicationController@create');
+Route::put('updatemedication/{id}', 'MedicationController@update');
+Route::delete('deletemedication/{id}', 'MedicationController@delete');
+
+Route::middleware('auth:api')->get('getmedicationsuser', 'MedicationUserController@index');
+Route::middleware('auth:api')->post('createmedicationsuser', 'MedicationUserController@create');
+Route::middleware('auth:api')->put('updatemedicationsuser/{id}', 'MedicationUserController@update');
+Route::middleware('auth:api')->delete('deletemedicationsuser/{id}', 'MedicationUserController@delete');
+
+Route::middleware('auth:api')->get('getmedicationsusertaken', 'MedicationUserTakenController@index');
+Route::middleware('auth:api')->post('createmedicationsusertaken', 'MedicationUserTakenController@create');
+Route::middleware('auth:api')->put('updatemedicationsusertaken/{id}', 'MedicationUserTakenController@update');
+Route::middleware('auth:api')->delete('deletemedicationsusertaken/{id}', 'MedicationUserTakenController@delete');
