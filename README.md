@@ -199,6 +199,57 @@ Response:
 }
 ```
 
+# Gebruiker aanpassen
+
+Type: PUT\
+URL: http://localhost:8000/api/updateuser
+
+Headers:\
+Content-type: application/json\
+Authorization: Bearer [access_token]
+
+Body (optional):\
+name: [name_of_person]\
+patient_number: [integer_value]\
+email: [email-address]\
+age: [integer_value]\
+height: [integer_value]
+
+Response:
+
+```
+{
+    "id": 1,
+    "name": "Test",
+    "patient_number": 123456,
+    "email": "test@gmail.com",
+    "email_verified_at": null,
+    "age": 20,
+    "height": 200,
+    "created_at": "2020-12-19T09:41:05.000000Z",
+    "updated_at": "2021-01-06T18:29:11.000000Z"
+}
+```
+
+# Wachtwoord wijzigen
+
+Type: PUT\
+URL: http://localhost:8000/api/changepassword
+
+Headers:\
+Content-type: application/json\
+Authorization: Bearer [access_token]
+
+Body:\
+old_password: [password]\
+new_password: [password]
+
+Response:
+
+```
+"Password succesfully changed"
+```
+
 # Peakflow ophalen van user
 
 Type: GET\
