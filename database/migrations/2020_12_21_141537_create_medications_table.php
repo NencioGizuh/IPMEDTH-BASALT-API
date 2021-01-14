@@ -17,6 +17,7 @@ class CreateMedicationsTable extends Migration
             $table->id();
             $table->string("name");
             $table->string("type");
+            $table->string("subType");
             $table->timestamps();
         });
     }

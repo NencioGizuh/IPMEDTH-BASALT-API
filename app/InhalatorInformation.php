@@ -11,6 +11,7 @@ class InhalatorInformation extends Model
         'fabrikant',
         'afbeelding',
         'gebruikMedicijn',
+        'type',
         'color',
         'state'
     ];
@@ -20,6 +21,7 @@ class InhalatorInformation extends Model
         'fabrikant',
         'afbeelding',
         'gebruikMedicijn',
+        'type',
         'color',
         'state'
     ];

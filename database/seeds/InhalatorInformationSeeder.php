@@ -19,6 +19,7 @@ class InhalatorInformationSeeder extends Seeder
                 'fabrikant' => 'Teva Pharma',
                 'afbeelding' => '/inhalators/Airomir dosisaerosol autohaler.png',
                 'gebruikMedicijn' => 'salbutamol',
+                'type' => "Luchtwegverwijders",
                 'color' => 'white',
                 'state' => false
             ],
@@ -26,7 +27,8 @@ class InhalatorInformationSeeder extends Seeder
                 'inhalatorName' => 'Qvar dosisaerosol Extrafijn Autohaler',
                 'fabrikant' => 'TEVA Pharma Nederland',
                 'afbeelding' => '/inhalators/Qvar dosisaerosol Extrafijn Autohaler.png',
-                'gebruikMedicijn' => 'beclometason',
+                'gebruikMedicijn' => 'beclomethason',
+                'type' => "Luchtwegbeschermers",
                 'color' => 'white',
                 'state' => false
             ],
@@ -35,6 +37,7 @@ class InhalatorInformationSeeder extends Seeder
                 'fabrikant' => 'Novartis Pharma bv',
                 'afbeelding' => '/inhalators/Onbrez inhalatiepoeder Breezhaler.png',
                 'gebruikMedicijn' => 'indacaterol',
+                'type' => "Luchtwegverwijders",
                 'color' => 'white',
                 'state' => false
             ],
@@ -43,6 +46,7 @@ class InhalatorInformationSeeder extends Seeder
                 'fabrikant' => 'Novartis Pharma bv',
                 'afbeelding' => '/inhalators/Seebri Breezhaler.png',
                 'gebruikMedicijn' => 'glycopyrronium',
+                'type' => "Luchtwegverwijders",
                 'color' => 'white',
                 'state' => false
             ],
@@ -51,6 +55,7 @@ class InhalatorInformationSeeder extends Seeder
                 'fabrikant' => 'Novartis Pharma bv',
                 'afbeelding' => '/inhalators/Ultibro Breezhaler.png',
                 'gebruikMedicijn' => 'indacaterol',
+                'type' => "Luchtwegverwijders",
                 'color' => 'white',
                 'state' => false
             ],
@@ -59,6 +64,7 @@ class InhalatorInformationSeeder extends Seeder
                 'fabrikant' => 'Novartis Pharma bv',
                 'afbeelding' => '/inhalators/Ultibro Breezhaler.png',
                 'gebruikMedicijn' => 'glycopyrronium',
+                'type' => "Luchtwegverwijders",
                 'color' => 'white',
                 'state' => false
             ],
@@ -66,7 +72,8 @@ class InhalatorInformationSeeder extends Seeder
                 'inhalatorName' => 'Beclometason inhalatiepoeder Cyclocaps',
                 'fabrikant' => 'Teva Pharma',
                 'afbeelding' => '/inhalators/Beclometason inhalatiepoeder Cyclocaps.png',
-                'gebruikMedicijn' => 'beclometason',
+                'gebruikMedicijn' => 'beclomethason',
+                'type' => "Luchtwegbeschermers",
                 'color' => 'white',
                 'state' => false
             ],
@@ -75,6 +82,7 @@ class InhalatorInformationSeeder extends Seeder
                 'fabrikant' => 'Teva Pharma',
                 'afbeelding' => '/inhalators/Budesonide inhalatiepoeder Cyclohaler.png',
                 'gebruikMedicijn' => 'budesonide',
+                'type' => "Luchtwegbeschermers",
                 'color' => 'white',
                 'state' => false
             ],
@@ -83,6 +91,7 @@ class InhalatorInformationSeeder extends Seeder
                 'fabrikant' => 'Teva Pharma',
                 'afbeelding' => '/inhalators/Formoterol inhalatiepoeder Cyclohaler.png',
                 'gebruikMedicijn' => 'formoterol',
+                'type' => "Luchtwegverwijders",
                 'color' => 'white',
                 'state' => false
             ],
@@ -90,7 +99,8 @@ class InhalatorInformationSeeder extends Seeder
                 'inhalatorName' => 'Ipratropium inhalatiepoeder Cyclohaler',
                 'fabrikant' => 'Teva Pharma',
                 'afbeelding' => '/inhalators/Ipratropium inhalatiepoeder Cyclohaler.png',
-                'gebruikMedicijn' => 'Ipratropium',
+                'gebruikMedicijn' => 'ipratropium',
+                'type' => "Luchtwegverwijders",
                 'color' => 'white',
                 'state' => false
             ],
@@ -99,6 +109,7 @@ class InhalatorInformationSeeder extends Seeder
                 'fabrikant' => 'Teva Pharma',
                 'afbeelding' => '/inhalators/Salbutamol cyclohaler inhalatiepoeder.png',
                 'gebruikMedicijn' => 'salbutamol',
+                'type' => "Luchtwegverwijders",
                 'color' => 'white',
                 'state' => false
             ],
@@ -107,6 +118,7 @@ class InhalatorInformationSeeder extends Seeder
                 'fabrikant' => 'GlaxoSmithKline',
                 'afbeelding' => '/inhalators/Flixotide inhalatiepoeder Diskus.png',
                 'gebruikMedicijn' => 'fluticasonpropionaat',
+                'type' => "Luchtwegbeschermers",
                 'color' => 'white',
                 'state' => false
             ],
@@ -115,6 +127,7 @@ class InhalatorInformationSeeder extends Seeder
                 'fabrikant' => 'GlaxoSmithKline',
                 'afbeelding' => '/inhalators/Seretide inhalatiepoeder Diskus.png',
                 'gebruikMedicijn' => 'salmeterol',
+                'type' => "Luchtwegverwijders",
                 'color' => 'white',
                 'state' => false
             ],
@@ -123,6 +136,7 @@ class InhalatorInformationSeeder extends Seeder
                 'fabrikant' => 'GlaxoSmithKline',
                 'afbeelding' => '/inhalators/Seretide inhalatiepoeder Diskus.png',
                 'gebruikMedicijn' => 'fluticasonpropionaat',
+                'type' => "Luchtwegbeschermers",
                 'color' => 'white',
                 'state' => false
             ],
@@ -131,6 +145,7 @@ class InhalatorInformationSeeder extends Seeder
                 'fabrikant' => 'GlaxoSmithKline',
                 'afbeelding' => '/inhalators/Serevent inhalatiepoeder Diskus.png',
                 'gebruikMedicijn' => 'salmeterol',
+                'type' => "Luchtwegverwijders",
                 'color' => 'white',
                 'state' => false
             ],
@@ -139,6 +154,7 @@ class InhalatorInformationSeeder extends Seeder
                 'fabrikant' => 'GlaxoSmithKline',
                 'afbeelding' => '/inhalators/Ventolin inhalatiepoeder Diskus.png',
                 'gebruikMedicijn' => 'salbutamol',
+                'type' => "Luchtwegverwijders",
                 'color' => 'white',
                 'state' => false
             ],
@@ -147,6 +163,7 @@ class InhalatorInformationSeeder extends Seeder
                 'fabrikant' => 'Teva Pharma',
                 'afbeelding' => '/inhalators/Airomir dosisaerosol.png',
                 'gebruikMedicijn' => 'salbutamol',
+                'type' => "Luchtwegverwijders",
                 'color' => 'white',
                 'state' => false
             ],
@@ -155,6 +172,7 @@ class InhalatorInformationSeeder extends Seeder
                 'fabrikant' => 'Covis Pharma Europe B.V.',
                 'afbeelding' => '/inhalators/Alvesco dosisaerosol inhalator.png',
                 'gebruikMedicijn' => 'ciclesonide',
+                'type' => "Luchtwegbeschermers",
                 'color' => 'white',
                 'state' => false
             ],
@@ -163,6 +181,7 @@ class InhalatorInformationSeeder extends Seeder
                 'fabrikant' => 'Chiesi Pharmaceuticals BV',
                 'afbeelding' => '/inhalators/Atimos dosisaerosol.png',
                 'gebruikMedicijn' => 'formoterol',
+                'type' => "Luchtwegverwijders",
                 'color' => 'white',
                 'state' => false
             ],
@@ -171,6 +190,7 @@ class InhalatorInformationSeeder extends Seeder
                 'fabrikant' => 'BoehringerIngelheim',
                 'afbeelding' => '/inhalators/Atrovent dosisaerosol.png',
                 'gebruikMedicijn' => 'ipratropium',
+                'type' => "Luchtwegverwijders",
                 'color' => 'white',
                 'state' => false
             ],
@@ -178,15 +198,8 @@ class InhalatorInformationSeeder extends Seeder
                 'inhalatorName' => 'Beclometason dosisaerosol',
                 'fabrikant' => 'Teva Pharma',
                 'afbeelding' => '/inhalators/Beclometason dosisaerosol.png',
-                'gebruikMedicijn' => 'beclometason',
-                'color' => 'white',
-                'state' => false
-            ],
-            [
-                'inhalatorName' => 'Berodual dosisaerosol',
-                'fabrikant' => 'BoehringerIngelheim',
-                'afbeelding' => '/inhalators/Berodual dosisaerosol.png',
-                'gebruikMedicijn' => 'fenoterol',
+                'gebruikMedicijn' => 'beclomethason',
+                'type' => "Luchtwegbeschermers",
                 'color' => 'white',
                 'state' => false
             ],
@@ -195,6 +208,7 @@ class InhalatorInformationSeeder extends Seeder
                 'fabrikant' => 'BoehringerIngelheim',
                 'afbeelding' => '/inhalators/Berodual dosisaerosol.png',
                 'gebruikMedicijn' => 'ipratropium',
+                'type' => "Luchtwegverwijders",
                 'color' => 'white',
                 'state' => false
             ],
@@ -203,6 +217,7 @@ class InhalatorInformationSeeder extends Seeder
                 'fabrikant' => 'AstraZeneca',
                 'afbeelding' => '/inhalators/Bevespi Aerosphere.png',
                 'gebruikMedicijn' => 'formoterol',
+                'type' => "Luchtwegverwijders",
                 'color' => 'white',
                 'state' => false
             ],
@@ -211,6 +226,7 @@ class InhalatorInformationSeeder extends Seeder
                 'fabrikant' => 'AstraZeneca',
                 'afbeelding' => '/inhalators/Bevespi Aerosphere.png',
                 'gebruikMedicijn' => 'glycopyrronium',
+                'type' => "Luchtwegverwijders",
                 'color' => 'white',
                 'state' => false
             ],
@@ -219,6 +235,7 @@ class InhalatorInformationSeeder extends Seeder
                 'fabrikant' => 'Mylan',
                 'afbeelding' => '/inhalators/Budesonide dosisaerosol Mylan.png',
                 'gebruikMedicijn' => 'budesonide',
+                'type' => "Luchtwegbeschermers",
                 'color' => 'white',
                 'state' => false
             ],
@@ -227,6 +244,7 @@ class InhalatorInformationSeeder extends Seeder
                 'fabrikant' => 'GlaxoSmithKline',
                 'afbeelding' => '/inhalators/Flixotide dosisaerosol.png',
                 'gebruikMedicijn' => 'fluticasonpropionaat',
+                'type' => "Luchtwegbeschermers",
                 'color' => 'white',
                 'state' => false
             ],
@@ -235,6 +253,7 @@ class InhalatorInformationSeeder extends Seeder
                 'fabrikant' => 'Mundipharma',
                 'afbeelding' => '/inhalators/Flutiform dosisaerosol.png',
                 'gebruikMedicijn' => 'formoterol',
+                'type' => "Luchtwegverwijders",
                 'color' => 'white',
                 'state' => false
             ],
@@ -243,6 +262,7 @@ class InhalatorInformationSeeder extends Seeder
                 'fabrikant' => 'Mundipharma',
                 'afbeelding' => '/inhalators/Flutiform dosisaerosol.png',
                 'gebruikMedicijn' => 'fluticasonpropionaat',
+                'type' => "Luchtwegbeschermers",
                 'color' => 'white',
                 'state' => false
             ],
@@ -251,6 +271,7 @@ class InhalatorInformationSeeder extends Seeder
                 'fabrikant' => 'Chiesi Pharmaceuticals BV',
                 'afbeelding' => '/inhalators/Foster dosisaerosol.png',
                 'gebruikMedicijn' => 'formoterol',
+                'type' => "Luchtwegverwijders",
                 'color' => 'white',
                 'state' => false
             ],            
@@ -259,6 +280,7 @@ class InhalatorInformationSeeder extends Seeder
                 'fabrikant' => 'Chiesi Pharmaceuticals BV',
                 'afbeelding' => '/inhalators/Foster dosisaerosol.png',
                 'gebruikMedicijn' => 'beclomethason',
+                'type' => "Luchtwegbeschermers",
                 'color' => 'white',
                 'state' => false
             ],
@@ -266,7 +288,8 @@ class InhalatorInformationSeeder extends Seeder
                 'inhalatorName' => 'Qvar dosisaerosol extrafijn',
                 'fabrikant' => 'TEVA Pharma Nederland',
                 'afbeelding' => '/inhalators/Qvar dosisaerosol extrafijn.png',
-                'gebruikMedicijn' => 'beclometason',
+                'gebruikMedicijn' => 'beclomethason',
+                'type' => "Luchtwegbeschermers",
                 'color' => 'white',
                 'state' => false
             ],
@@ -275,6 +298,7 @@ class InhalatorInformationSeeder extends Seeder
                 'fabrikant' => 'Teva Pharma',
                 'afbeelding' => '/inhalators/Salbutamol dosisaerosol.png',
                 'gebruikMedicijn' => 'salbutamol',
+                'type' => "Luchtwegverwijders",
                 'color' => 'white',
                 'state' => false
             ],
@@ -283,6 +307,7 @@ class InhalatorInformationSeeder extends Seeder
                 'fabrikant' => 'GlaxoSmithKline',
                 'afbeelding' => '/inhalators/Seretide dosisaerosol.png',
                 'gebruikMedicijn' => 'salmeterol',
+                'type' => "Luchtwegverwijders",
                 'color' => 'white',
                 'state' => false
             ],
@@ -291,6 +316,7 @@ class InhalatorInformationSeeder extends Seeder
                 'fabrikant' => 'GlaxoSmithKline',
                 'afbeelding' => '/inhalators/Seretide dosisaerosol.png',
                 'gebruikMedicijn' => 'fluticasonpropionaat',
+                'type' => "Luchtwegbeschermers",
                 'color' => 'white',
                 'state' => false
             ],
@@ -299,6 +325,7 @@ class InhalatorInformationSeeder extends Seeder
                 'fabrikant' => 'GlaxoSmithKline',
                 'afbeelding' => '/inhalators/Serevent dosisaerosol.png',
                 'gebruikMedicijn' => 'salmeterol',
+                'type' => "Luchtwegverwijders",
                 'color' => 'white',
                 'state' => false
             ],
@@ -307,6 +334,7 @@ class InhalatorInformationSeeder extends Seeder
                 'fabrikant' => 'AstraZeneca',
                 'afbeelding' => '/inhalators/Symbicort dosisaerosol.png',
                 'gebruikMedicijn' => 'budesonide',
+                'type' => "Luchtwegbeschermers",
                 'color' => 'white',
                 'state' => false
             ],
@@ -315,6 +343,7 @@ class InhalatorInformationSeeder extends Seeder
                 'fabrikant' => 'AstraZeneca',
                 'afbeelding' => '/inhalators/Symbicort dosisaerosol.png',
                 'gebruikMedicijn' => 'formoterol',
+                'type' => "Luchtwegverwijders",
                 'color' => 'white',
                 'state' => false
             ],
@@ -322,7 +351,8 @@ class InhalatorInformationSeeder extends Seeder
                 'inhalatorName' => 'Trimbow dosisaerosol',
                 'fabrikant' => 'Chiesi',
                 'afbeelding' => '/inhalators/Trimbow dosisaerosol.png',
-                'gebruikMedicijn' => 'beclometason',
+                'gebruikMedicijn' => 'beclomethason',
+                'type' => "Luchtwegbeschermers",
                 'color' => 'white',
                 'state' => false
             ],
@@ -331,6 +361,7 @@ class InhalatorInformationSeeder extends Seeder
                 'fabrikant' => 'Chiesi',
                 'afbeelding' => '/inhalators/Trimbow dosisaerosol.png',
                 'gebruikMedicijn' => 'formoterol',
+                'type' => "Luchtwegverwijders",
                 'color' => 'white',
                 'state' => false
             ],
@@ -339,6 +370,7 @@ class InhalatorInformationSeeder extends Seeder
                 'fabrikant' => 'Chiesi',
                 'afbeelding' => '/inhalators/Trimbow dosisaerosol.png',
                 'gebruikMedicijn' => 'glycopyrronium',
+                'type' => "Luchtwegverwijders",
                 'color' => 'white',
                 'state' => false
             ],
@@ -347,6 +379,7 @@ class InhalatorInformationSeeder extends Seeder
                 'fabrikant' => 'GlaxoSmithKline',
                 'afbeelding' => '/inhalators/Ventolin dosisaerosol.png',
                 'gebruikMedicijn' => 'salbutamol',
+                'type' => "Luchtwegverwijders",
                 'color' => 'white',
                 'state' => false
             ],
@@ -355,6 +388,7 @@ class InhalatorInformationSeeder extends Seeder
                 'fabrikant' => 'Orion Pharma Benelux',
                 'afbeelding' => '/inhalators/Easyhaler met Budesonide.png',
                 'gebruikMedicijn' => 'budesonide',
+                'type' => "Luchtwegbeschermers",
                 'color' => 'white',
                 'state' => false
             ],
@@ -363,6 +397,7 @@ class InhalatorInformationSeeder extends Seeder
                 'fabrikant' => 'Orion Pharma Benelux',
                 'afbeelding' => '/inhalators/Easyhaler met combinatie Budesonide a Formoterol.png',
                 'gebruikMedicijn' => 'formoterol',
+                'type' => "Luchtwegverwijders",
                 'color' => 'white',
                 'state' => false
             ],
@@ -371,6 +406,7 @@ class InhalatorInformationSeeder extends Seeder
                 'fabrikant' => 'Orion Pharma Benelux',
                 'afbeelding' => '/inhalators/Easyhaler met combinatie Budesonide a Formoterol.png',
                 'gebruikMedicijn' => 'budesonide',
+                'type' => "Luchtwegbeschermers",
                 'color' => 'white',
                 'state' => false
             ],
@@ -379,6 +415,7 @@ class InhalatorInformationSeeder extends Seeder
                 'fabrikant' => 'Orion Pharma Benelux',
                 'afbeelding' => '/inhalators/Easyhaler met Formoterol.png',
                 'gebruikMedicijn' => 'formoterol',
+                'type' => "Luchtwegverwijders",
                 'color' => 'white',
                 'state' => false
             ],
@@ -387,6 +424,7 @@ class InhalatorInformationSeeder extends Seeder
                 'fabrikant' => 'GSK',
                 'afbeelding' => '/inhalators/Incruse Ellipta.png',
                 'gebruikMedicijn' => 'umeclidinium',
+                'type' => "Luchtwegverwijders",
                 'color' => 'white',
                 'state' => false
             ],
@@ -395,6 +433,7 @@ class InhalatorInformationSeeder extends Seeder
                 'fabrikant' => 'Focus Care Pharmaceuticals',
                 'afbeelding' => '/inhalators/Elpenhaler.png',
                 'gebruikMedicijn' => 'salmeterol',
+                'type' => "Luchtwegverwijders",
                 'color' => 'white',
                 'state' => false
             ],
@@ -403,6 +442,7 @@ class InhalatorInformationSeeder extends Seeder
                 'fabrikant' => 'Focus Care Pharmaceuticals',
                 'afbeelding' => '/inhalators/Elpenhaler.png',
                 'gebruikMedicijn' => 'fluticason',
+                'type' => "Luchtwegbeschermers",
                 'color' => 'white',
                 'state' => false
             ],
@@ -411,6 +451,7 @@ class InhalatorInformationSeeder extends Seeder
                 'fabrikant' => 'AstraZeneca bv',
                 'afbeelding' => '/inhalators/Eklira Genuair Inhalatiepoeder.png',
                 'gebruikMedicijn' => 'aclidinium',
+                'type' => "Luchtwegverwijders",
                 'color' => 'white',
                 'state' => false
             ],
@@ -419,6 +460,7 @@ class InhalatorInformationSeeder extends Seeder
                 'fabrikant' => 'BoehringerIngelheim',
                 'afbeelding' => '/inhalators/Spiriva inhalatiepoeder Handihaler.png',
                 'gebruikMedicijn' => 'tiotropium',
+                'type' => "Luchtwegverwijders",
                 'color' => 'white',
                 'state' => false
             ],
@@ -427,6 +469,7 @@ class InhalatorInformationSeeder extends Seeder
                 'fabrikant' => 'Chiesi Pharmaceuticals BV',
                 'afbeelding' => '/inhalators/Foster inhalatiepoeder Nexthaler.png',
                 'gebruikMedicijn' => 'formoterol',
+                'type' => "Luchtwegverwijders",
                 'color' => 'white',
                 'state' => false
             ],
@@ -435,6 +478,7 @@ class InhalatorInformationSeeder extends Seeder
                 'fabrikant' => 'Chiesi Pharmaceuticals BV',
                 'afbeelding' => '/inhalators/Foster inhalatiepoeder Nexthaler.png',
                 'gebruikMedicijn' => 'beclomethason',
+                'type' => "Luchtwegbeschermers",
                 'color' => 'white',
                 'state' => false
             ],
@@ -443,6 +487,7 @@ class InhalatorInformationSeeder extends Seeder
                 'fabrikant' => 'Mylan BV',
                 'afbeelding' => '/inhalators/Budesonide inhalatiepoeder Novolizer.png',
                 'gebruikMedicijn' => 'budesonide',
+                'type' => "Luchtwegbeschermers",
                 'color' => 'white',
                 'state' => false
             ],
@@ -451,6 +496,7 @@ class InhalatorInformationSeeder extends Seeder
                 'fabrikant' => 'Mylan BV',
                 'afbeelding' => '/inhalators/Formoterol inhalatiepoeder Novolizer.png',
                 'gebruikMedicijn' => 'formoterol',
+                'type' => "Luchtwegverwijders",
                 'color' => 'white',
                 'state' => false
             ],
@@ -459,6 +505,7 @@ class InhalatorInformationSeeder extends Seeder
                 'fabrikant' => 'Mylan BV',
                 'afbeelding' => '/inhalators/Salbutamol inhalatiepoeder Novolizer.png',
                 'gebruikMedicijn' => 'salbutamol',
+                'type' => "Luchtwegverwijders",
                 'color' => 'white',
                 'state' => false
             ],
@@ -466,7 +513,8 @@ class InhalatorInformationSeeder extends Seeder
                 'inhalatorName' => 'Redihaler',
                 'fabrikant' => 'TEVA Pharma',
                 'afbeelding' => '/inhalators/Redihaler.png',
-                'gebruikMedicijn' => 'beclometason',
+                'gebruikMedicijn' => 'beclomethason',
+                'type' => "Luchtwegbeschermers",
                 'color' => 'white',
                 'state' => false
             ],
@@ -475,6 +523,7 @@ class InhalatorInformationSeeder extends Seeder
                 'fabrikant' => 'Teva Pharma',
                 'afbeelding' => '/inhalators/Salbutamol Redihaler dosisaerosol.png',
                 'gebruikMedicijn' => 'salbutamol',
+                'type' => "Luchtwegverwijders",
                 'color' => 'white',
                 'state' => false
             ],
@@ -483,6 +532,7 @@ class InhalatorInformationSeeder extends Seeder
                 'fabrikant' => 'Boehringer Ingelheim',
                 'afbeelding' => '/inhalators/Spiolto Respimat.png',
                 'gebruikMedicijn' => 'tiotropium',
+                'type' => "Luchtwegverwijders",
                 'color' => 'white',
                 'state' => false
             ],
@@ -491,6 +541,7 @@ class InhalatorInformationSeeder extends Seeder
                 'fabrikant' => 'Boehringer Ingelheim',
                 'afbeelding' => '/inhalators/Spiolto Respimat.png',
                 'gebruikMedicijn' => 'olodaterol',
+                'type' => "Luchtwegverwijders",
                 'color' => 'white',
                 'state' => false
             ],
@@ -499,6 +550,7 @@ class InhalatorInformationSeeder extends Seeder
                 'fabrikant' => 'Boehringer Ingelheim',
                 'afbeelding' => '/inhalators/Spiriva Respimat.png',
                 'gebruikMedicijn' => 'tiotropium',
+                'type' => "Luchtwegverwijders",
                 'color' => 'white',
                 'state' => false
             ],
@@ -507,6 +559,7 @@ class InhalatorInformationSeeder extends Seeder
                 'fabrikant' => 'Boehringer Ingelheim',
                 'afbeelding' => '/inhalators/Striverdi Respimat.png',
                 'gebruikMedicijn' => 'olodaterol',
+                'type' => "Luchtwegverwijders",
                 'color' => 'white',
                 'state' => false
             ],
@@ -515,6 +568,7 @@ class InhalatorInformationSeeder extends Seeder
                 'fabrikant' => 'Teva',
                 'afbeelding' => '/inhalators/Spiromax 160mcg.png',
                 'gebruikMedicijn' => 'budesonide',
+                'type' => "Luchtwegbeschermers",
                 'color' => 'white',
                 'state' => false
             ],
@@ -523,6 +577,7 @@ class InhalatorInformationSeeder extends Seeder
                 'fabrikant' => 'Teva',
                 'afbeelding' => '/inhalators/Spiromax 160mcg.png',
                 'gebruikMedicijn' => 'formoterol',
+                'type' => "Luchtwegverwijders",
                 'color' => 'white',
                 'state' => false
             ],
@@ -531,6 +586,7 @@ class InhalatorInformationSeeder extends Seeder
                 'fabrikant' => 'Teva',
                 'afbeelding' => '/inhalators/Spiromax 320mcg.png',
                 'gebruikMedicijn' => 'budesonide',
+                'type' => "Luchtwegbeschermers",
                 'color' => 'white',
                 'state' => false
             ],
@@ -539,6 +595,7 @@ class InhalatorInformationSeeder extends Seeder
                 'fabrikant' => 'Teva',
                 'afbeelding' => '/inhalators/Spiromax 320mcg.png',
                 'gebruikMedicijn' => 'formoterol',
+                'type' => "Luchtwegverwijders",
                 'color' => 'white',
                 'state' => false
             ],
@@ -547,6 +604,7 @@ class InhalatorInformationSeeder extends Seeder
                 'fabrikant' => 'AstraZeneca',
                 'afbeelding' => '/inhalators/Bricanyl inhalatiepoeder Turbuhaler.png',
                 'gebruikMedicijn' => 'terbutaline',
+                'type' => "Luchtwegverwijders",
                 'color' => 'white',
                 'state' => false
             ],
@@ -555,6 +613,7 @@ class InhalatorInformationSeeder extends Seeder
                 'fabrikant' => 'AstraZeneca',
                 'afbeelding' => '/inhalators/Oxis inhalatiepoeder Turbuhaler.png',
                 'gebruikMedicijn' => 'formoterol',
+                'type' => "Luchtwegverwijders",
                 'color' => 'white',
                 'state' => false
             ],
@@ -563,6 +622,7 @@ class InhalatorInformationSeeder extends Seeder
                 'fabrikant' => 'AstraZeneca',
                 'afbeelding' => '/inhalators/Pulmicort inhalatiepoeder Turbuhaler.png',
                 'gebruikMedicijn' => 'budesonide',
+                'type' => "Luchtwegbeschermers",
                 'color' => 'white',
                 'state' => false
             ],
@@ -571,6 +631,7 @@ class InhalatorInformationSeeder extends Seeder
                 'fabrikant' => 'AstraZeneca',
                 'afbeelding' => '/inhalators/Symbicort inhalatiepoeder Turbuhaler.png',
                 'gebruikMedicijn' => 'formoterol',
+                'type' => "Luchtwegverwijders",
                 'color' => 'white',
                 'state' => false
             ],
@@ -579,6 +640,7 @@ class InhalatorInformationSeeder extends Seeder
                 'fabrikant' => 'AstraZeneca',
                 'afbeelding' => '/inhalators/Symbicort inhalatiepoeder Turbuhaler.png',
                 'gebruikMedicijn' => 'budesonide',
+                'type' => "Luchtwegbeschermers",
                 'color' => 'white',
                 'state' => false
             ],
@@ -587,6 +649,7 @@ class InhalatorInformationSeeder extends Seeder
                 'fabrikant' => 'Teva',
                 'afbeelding' => '/inhalators/Zonda.png',
                 'gebruikMedicijn' => 'tiotropium',
+                'type' => "Luchtwegverwijders",
                 'color' => 'white',
                 'state' => false
             ],
@@ -595,6 +658,7 @@ class InhalatorInformationSeeder extends Seeder
                 'fabrikant' => 'GSK',
                 'afbeelding' => '/inhalators/Avamys corticosteroid neusspray.png',
                 'gebruikMedicijn' => 'corticosteroid neusspray',
+                'type' => "Neusspray",
                 'color' => 'white',
                 'state' => false
             ],
@@ -603,6 +667,7 @@ class InhalatorInformationSeeder extends Seeder
                 'fabrikant' => '',
                 'afbeelding' => '/inhalators/Corticosteroid neusspray.png',
                 'gebruikMedicijn' => 'corticosteroid neusspray',
+                'type' => "Neusspray",
                 'color' => 'white',
                 'state' => false
             ]
@@ -614,6 +679,7 @@ class InhalatorInformationSeeder extends Seeder
                 'fabrikant' => $inhalatorInformation[$i]['fabrikant'],
                 'afbeelding' => $inhalatorInformation[$i]['afbeelding'],
                 'gebruikMedicijn' => $inhalatorInformation[$i]['gebruikMedicijn'],
+                'type' => $inhalatorInformation[$i]['type'],
                 'color' => $inhalatorInformation[$i]['color'],
                 'state' => $inhalatorInformation[$i]['state'],
             ]);

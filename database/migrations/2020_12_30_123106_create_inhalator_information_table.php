@@ -19,6 +19,7 @@ class CreateInhalatorInformationTable extends Migration
             $table->string('fabrikant');
             $table->string('afbeelding');
             $table->string('gebruikMedicijn');
+            $table->string('type');
             $table->string('color');
             $table->boolean('state');
         });
