@@ -1060,3 +1060,573 @@ URL: http://localhost:8000/api/deletemedicationsusertaken/{id}
 
 Headers:\
 Authorization: Bearer [access_token]
+
+# Inhalators ophalen op basis van id
+Type: GET
+URL: http://localhost:8000/api/choseninhalators
+
+Params:
+
+values: values: [comma_separated_list] integer
+
+Response:
+
+```
+[
+    {
+        "id": 4,
+        "inhalatorName": "Seebri Breezhaler",
+        "fabrikant": "Novartis Pharma bv",
+        "afbeelding": "/inhalators/Seebri Breezhaler.png",
+        "gebruikMedicijn": "glycopyrronium",
+        "color": "white",
+        "state": 0
+    },
+    {
+        "id": 7,
+        "inhalatorName": "Beclometason inhalatiepoeder Cyclocaps",
+        "fabrikant": "Teva Pharma",
+        "afbeelding": "/inhalators/Beclometason inhalatiepoeder Cyclocaps.png",
+        "gebruikMedicijn": "beclometason",
+        "color": "white",
+        "state": 0
+    },
+    {
+        "id": 22,
+        "inhalatorName": "Berodual dosisaerosol",
+        "fabrikant": "BoehringerIngelheim",
+        "afbeelding": "/inhalators/Berodual dosisaerosol.png",
+        "gebruikMedicijn": "fenoterol",
+        "color": "white",
+        "state": 0
+    },
+    {
+        "id": 23,
+        "inhalatorName": "Berodual dosisaerosol",
+        "fabrikant": "BoehringerIngelheim",
+        "afbeelding": "/inhalators/Berodual dosisaerosol.png",
+        "gebruikMedicijn": "ipratropium",
+        "color": "white",
+        "state": 0
+    }
+]
+```
+
+# Inhalators ophalen op basis van medicatie
+
+Type: GET
+URL: http://localhost:8000/api/inhalatorinformation
+
+Params:
+values: [comma_separated_list] string
+
+Response:
+
+```
+[
+    {
+        "id": 1,
+        "inhalatorName": "Airomir dosisaerosol autohaler",
+        "fabrikant": "Teva Pharma",
+        "afbeelding": "/inhalators/Airomir dosisaerosol autohaler.png",
+        "gebruikMedicijn": "salbutamol",
+        "color": "white",
+        "state": 0
+    },
+    {
+        "id": 3,
+        "inhalatorName": "Onbrez inhalatiepoeder Breezhaler",
+        "fabrikant": "Novartis Pharma bv",
+        "afbeelding": "/inhalators/Onbrez inhalatiepoeder Breezhaler.png",
+        "gebruikMedicijn": "indacaterol",
+        "color": "white",
+        "state": 0
+    },
+    {
+        "id": 5,
+        "inhalatorName": "Ultibro Breezhaler",
+        "fabrikant": "Novartis Pharma bv",
+        "afbeelding": "/inhalators/Ultibro Breezhaler.png",
+        "gebruikMedicijn": "indacaterol",
+        "color": "white",
+        "state": 0
+    },
+    {
+        "id": 8,
+        "inhalatorName": "Budesonide inhalatiepoeder Cyclohaler",
+        "fabrikant": "Teva Pharma",
+        "afbeelding": "/inhalators/Budesonide inhalatiepoeder Cyclohaler.png",
+        "gebruikMedicijn": "budesonide",
+        "color": "white",
+        "state": 0
+    },
+    {
+        "id": 9,
+        "inhalatorName": "Formoterol inhalatiepoeder Cyclohaler",
+        "fabrikant": "Teva Pharma",
+        "afbeelding": "/inhalators/Formoterol inhalatiepoeder Cyclohaler.png",
+        "gebruikMedicijn": "formoterol",
+        "color": "white",
+        "state": 0
+    },
+    {
+        "id": 10,
+        "inhalatorName": "Ipratropium inhalatiepoeder Cyclohaler",
+        "fabrikant": "Teva Pharma",
+        "afbeelding": "/inhalators/Ipratropium inhalatiepoeder Cyclohaler.png",
+        "gebruikMedicijn": "Ipratropium",
+        "color": "white",
+        "state": 0
+    },
+    {
+        "id": 11,
+        "inhalatorName": "Salbutamol cyclohaler inhalatiepoeder",
+        "fabrikant": "Teva Pharma",
+        "afbeelding": "/inhalators/Salbutamol cyclohaler inhalatiepoeder.png",
+        "gebruikMedicijn": "salbutamol",
+        "color": "white",
+        "state": 0
+    },
+    {
+        "id": 12,
+        "inhalatorName": "Flixotide inhalatiepoeder Diskus",
+        "fabrikant": "GlaxoSmithKline",
+        "afbeelding": "/inhalators/Flixotide inhalatiepoeder Diskus.png",
+        "gebruikMedicijn": "fluticasonpropionaat",
+        "color": "white",
+        "state": 0
+    },
+    {
+        "id": 14,
+        "inhalatorName": "Seretide inhalatiepoeder Diskus",
+        "fabrikant": "GlaxoSmithKline",
+        "afbeelding": "/inhalators/Seretide inhalatiepoeder Diskus.png",
+        "gebruikMedicijn": "fluticasonpropionaat",
+        "color": "white",
+        "state": 0
+    },
+    {
+        "id": 16,
+        "inhalatorName": "Ventolin inhalatiepoeder Diskus",
+        "fabrikant": "GlaxoSmithKline",
+        "afbeelding": "/inhalators/Ventolin inhalatiepoeder Diskus.png",
+        "gebruikMedicijn": "salbutamol",
+        "color": "white",
+        "state": 0
+    },
+    {
+        "id": 17,
+        "inhalatorName": "Airomir dosisaerosol",
+        "fabrikant": "Teva Pharma",
+        "afbeelding": "/inhalators/Airomir dosisaerosol.png",
+        "gebruikMedicijn": "salbutamol",
+        "color": "white",
+        "state": 0
+    },
+    {
+        "id": 18,
+        "inhalatorName": "Alvesco dosisaerosol inhalator",
+        "fabrikant": "Covis Pharma Europe B.V.",
+        "afbeelding": "/inhalators/Alvesco dosisaerosol inhalator.png",
+        "gebruikMedicijn": "ciclesonide",
+        "color": "white",
+        "state": 0
+    },
+    {
+        "id": 19,
+        "inhalatorName": "Atimos dosisaerosol",
+        "fabrikant": "Chiesi Pharmaceuticals BV",
+        "afbeelding": "/inhalators/Atimos dosisaerosol.png",
+        "gebruikMedicijn": "formoterol",
+        "color": "white",
+        "state": 0
+    },
+    {
+        "id": 20,
+        "inhalatorName": "Atrovent dosisaerosol",
+        "fabrikant": "BoehringerIngelheim",
+        "afbeelding": "/inhalators/Atrovent dosisaerosol.png",
+        "gebruikMedicijn": "ipratropium",
+        "color": "white",
+        "state": 0
+    },
+    {
+        "id": 23,
+        "inhalatorName": "Berodual dosisaerosol",
+        "fabrikant": "BoehringerIngelheim",
+        "afbeelding": "/inhalators/Berodual dosisaerosol.png",
+        "gebruikMedicijn": "ipratropium",
+        "color": "white",
+        "state": 0
+    },
+    {
+        "id": 24,
+        "inhalatorName": "Bevespi Aerosphere",
+        "fabrikant": "AstraZeneca",
+        "afbeelding": "/inhalators/Bevespi Aerosphere.png",
+        "gebruikMedicijn": "formoterol",
+        "color": "white",
+        "state": 0
+    },
+    {
+        "id": 26,
+        "inhalatorName": "Budesonide dosisaerosol",
+        "fabrikant": "Mylan",
+        "afbeelding": "/inhalators/Budesonide dosisaerosol Mylan.png",
+        "gebruikMedicijn": "budesonide",
+        "color": "white",
+        "state": 0
+    },
+    {
+        "id": 27,
+        "inhalatorName": "Flixotide dosisaerosol",
+        "fabrikant": "GlaxoSmithKline",
+        "afbeelding": "/inhalators/Flixotide dosisaerosol.png",
+        "gebruikMedicijn": "fluticasonpropionaat",
+        "color": "white",
+        "state": 0
+    },
+    {
+        "id": 28,
+        "inhalatorName": "Flutiform dosisaerosol",
+        "fabrikant": "Mundipharma",
+        "afbeelding": "/inhalators/Flutiform dosisaerosol.png",
+        "gebruikMedicijn": "formoterol",
+        "color": "white",
+        "state": 0
+    },
+    {
+        "id": 29,
+        "inhalatorName": "Flutiform dosisaerosol",
+        "fabrikant": "Mundipharma",
+        "afbeelding": "/inhalators/Flutiform dosisaerosol.png",
+        "gebruikMedicijn": "fluticasonpropionaat",
+        "color": "white",
+        "state": 0
+    },
+    {
+        "id": 30,
+        "inhalatorName": "Foster dosisaerosol",
+        "fabrikant": "Chiesi Pharmaceuticals BV",
+        "afbeelding": "/inhalators/Foster dosisaerosol.png",
+        "gebruikMedicijn": "formoterol",
+        "color": "white",
+        "state": 0
+    },
+    {
+        "id": 31,
+        "inhalatorName": "Foster dosisaerosol",
+        "fabrikant": "Chiesi Pharmaceuticals BV",
+        "afbeelding": "/inhalators/Foster dosisaerosol.png",
+        "gebruikMedicijn": "beclomethason",
+        "color": "white",
+        "state": 0
+    },
+    {
+        "id": 33,
+        "inhalatorName": "Salbutamol dosisaerosol",
+        "fabrikant": "Teva Pharma",
+        "afbeelding": "/inhalators/Salbutamol dosisaerosol.png",
+        "gebruikMedicijn": "salbutamol",
+        "color": "white",
+        "state": 0
+    },
+    {
+        "id": 35,
+        "inhalatorName": "Seretide dosisaerosol",
+        "fabrikant": "GlaxoSmithKline",
+        "afbeelding": "/inhalators/Seretide dosisaerosol.png",
+        "gebruikMedicijn": "fluticasonpropionaat",
+        "color": "white",
+        "state": 0
+    },
+    {
+        "id": 37,
+        "inhalatorName": "Symbicort dosisaerosol",
+        "fabrikant": "AstraZeneca",
+        "afbeelding": "/inhalators/Symbicort dosisaerosol.png",
+        "gebruikMedicijn": "budesonide",
+        "color": "white",
+        "state": 0
+    },
+    {
+        "id": 38,
+        "inhalatorName": "Symbicort dosisaerosol",
+        "fabrikant": "AstraZeneca",
+        "afbeelding": "/inhalators/Symbicort dosisaerosol.png",
+        "gebruikMedicijn": "formoterol",
+        "color": "white",
+        "state": 0
+    },
+    {
+        "id": 40,
+        "inhalatorName": "Trimbow dosisaerosol",
+        "fabrikant": "Chiesi",
+        "afbeelding": "/inhalators/Trimbow dosisaerosol.png",
+        "gebruikMedicijn": "formoterol",
+        "color": "white",
+        "state": 0
+    },
+    {
+        "id": 42,
+        "inhalatorName": "Ventolin dosisaerosol",
+        "fabrikant": "GlaxoSmithKline",
+        "afbeelding": "/inhalators/Ventolin dosisaerosol.png",
+        "gebruikMedicijn": "salbutamol",
+        "color": "white",
+        "state": 0
+    },
+    {
+        "id": 43,
+        "inhalatorName": "Easyhaler met Budesonide",
+        "fabrikant": "Orion Pharma Benelux",
+        "afbeelding": "/inhalators/Easyhaler met Budesonide.png",
+        "gebruikMedicijn": "budesonide",
+        "color": "white",
+        "state": 0
+    },
+    {
+        "id": 44,
+        "inhalatorName": "Easyhaler met combinatie Budesonide / Formoterol",
+        "fabrikant": "Orion Pharma Benelux",
+        "afbeelding": "/inhalators/Easyhaler met combinatie Budesonide a Formoterol.png",
+        "gebruikMedicijn": "formoterol",
+        "color": "white",
+        "state": 0
+    },
+    {
+        "id": 45,
+        "inhalatorName": "Easyhaler met combinatie Budesonide / Formoterol",
+        "fabrikant": "Orion Pharma Benelux",
+        "afbeelding": "/inhalators/Easyhaler met combinatie Budesonide a Formoterol.png",
+        "gebruikMedicijn": "budesonide",
+        "color": "white",
+        "state": 0
+    },
+    {
+        "id": 46,
+        "inhalatorName": "Easyhaler met Formoterol",
+        "fabrikant": "Orion Pharma Benelux",
+        "afbeelding": "/inhalators/Easyhaler met Formoterol.png",
+        "gebruikMedicijn": "formoterol",
+        "color": "white",
+        "state": 0
+    },
+    {
+        "id": 47,
+        "inhalatorName": "Incruse Ellipta",
+        "fabrikant": "GSK",
+        "afbeelding": "/inhalators/Incruse Ellipta.png",
+        "gebruikMedicijn": "umeclidinium",
+        "color": "white",
+        "state": 0
+    },
+    {
+        "id": 51,
+        "inhalatorName": "Spiriva inhalatiepoeder Handihaler",
+        "fabrikant": "BoehringerIngelheim",
+        "afbeelding": "/inhalators/Spiriva inhalatiepoeder Handihaler.png",
+        "gebruikMedicijn": "tiotropium",
+        "color": "white",
+        "state": 0
+    },
+    {
+        "id": 52,
+        "inhalatorName": "Foster inhalatiepoeder Nexthaler",
+        "fabrikant": "Chiesi Pharmaceuticals BV",
+        "afbeelding": "/inhalators/Foster inhalatiepoeder Nexthaler.png",
+        "gebruikMedicijn": "formoterol",
+        "color": "white",
+        "state": 0
+    },
+    {
+        "id": 53,
+        "inhalatorName": "Foster inhalatiepoeder Nexthaler",
+        "fabrikant": "Chiesi Pharmaceuticals BV",
+        "afbeelding": "/inhalators/Foster inhalatiepoeder Nexthaler.png",
+        "gebruikMedicijn": "beclomethason",
+        "color": "white",
+        "state": 0
+    },
+    {
+        "id": 54,
+        "inhalatorName": "Budesonide inhalatiepoeder Novolizer",
+        "fabrikant": "Mylan BV",
+        "afbeelding": "/inhalators/Budesonide inhalatiepoeder Novolizer.png",
+        "gebruikMedicijn": "budesonide",
+        "color": "white",
+        "state": 0
+    },
+    {
+        "id": 55,
+        "inhalatorName": "Formoterol inhalatiepoeder Novolizer",
+        "fabrikant": "Mylan BV",
+        "afbeelding": "/inhalators/Formoterol inhalatiepoeder Novolizer.png",
+        "gebruikMedicijn": "formoterol",
+        "color": "white",
+        "state": 0
+    },
+    {
+        "id": 56,
+        "inhalatorName": "Salbutamol inhalatiepoeder Novolizer",
+        "fabrikant": "Mylan BV",
+        "afbeelding": "/inhalators/Salbutamol inhalatiepoeder Novolizer.png",
+        "gebruikMedicijn": "salbutamol",
+        "color": "white",
+        "state": 0
+    },
+    {
+        "id": 58,
+        "inhalatorName": "Salbutamol Redihaler dosisaerosol",
+        "fabrikant": "Teva Pharma",
+        "afbeelding": "/inhalators/Salbutamol Redihaler dosisaerosol.png",
+        "gebruikMedicijn": "salbutamol",
+        "color": "white",
+        "state": 0
+    },
+    {
+        "id": 59,
+        "inhalatorName": "Spiolto Respimat",
+        "fabrikant": "Boehringer Ingelheim",
+        "afbeelding": "/inhalators/Spiolto Respimat.png",
+        "gebruikMedicijn": "tiotropium",
+        "color": "white",
+        "state": 0
+    },
+    {
+        "id": 60,
+        "inhalatorName": "Spiolto Respimat",
+        "fabrikant": "Boehringer Ingelheim",
+        "afbeelding": "/inhalators/Spiolto Respimat.png",
+        "gebruikMedicijn": "olodaterol",
+        "color": "white",
+        "state": 0
+    },
+    {
+        "id": 61,
+        "inhalatorName": "Spiriva Respimat",
+        "fabrikant": "Boehringer Ingelheim",
+        "afbeelding": "/inhalators/Spiriva Respimat.png",
+        "gebruikMedicijn": "tiotropium",
+        "color": "white",
+        "state": 0
+    },
+    {
+        "id": 62,
+        "inhalatorName": "Striverdi Respimat",
+        "fabrikant": "Boehringer Ingelheim",
+        "afbeelding": "/inhalators/Striverdi Respimat.png",
+        "gebruikMedicijn": "olodaterol",
+        "color": "white",
+        "state": 0
+    },
+    {
+        "id": 63,
+        "inhalatorName": "Spiromax 160mcg",
+        "fabrikant": "Teva",
+        "afbeelding": "/inhalators/Spiromax 160mcg.png",
+        "gebruikMedicijn": "budesonide",
+        "color": "white",
+        "state": 0
+    },
+    {
+        "id": 64,
+        "inhalatorName": "Spiromax 160mcg",
+        "fabrikant": "Teva",
+        "afbeelding": "/inhalators/Spiromax 160mcg.png",
+        "gebruikMedicijn": "formoterol",
+        "color": "white",
+        "state": 0
+    },
+    {
+        "id": 65,
+        "inhalatorName": "Spiromax 320mcg",
+        "fabrikant": "Teva",
+        "afbeelding": "/inhalators/Spiromax 320mcg.png",
+        "gebruikMedicijn": "budesonide",
+        "color": "white",
+        "state": 0
+    },
+    {
+        "id": 66,
+        "inhalatorName": "Spiromax 320mcg",
+        "fabrikant": "Teva",
+        "afbeelding": "/inhalators/Spiromax 320mcg.png",
+        "gebruikMedicijn": "formoterol",
+        "color": "white",
+        "state": 0
+    },
+    {
+        "id": 67,
+        "inhalatorName": "Bricanyl inhalatiepoeder Turbuhaler",
+        "fabrikant": "AstraZeneca",
+        "afbeelding": "/inhalators/Bricanyl inhalatiepoeder Turbuhaler.png",
+        "gebruikMedicijn": "terbutaline",
+        "color": "white",
+        "state": 0
+    },
+    {
+        "id": 68,
+        "inhalatorName": "Oxis inhalatiepoeder Turbuhaler",
+        "fabrikant": "AstraZeneca",
+        "afbeelding": "/inhalators/Oxis inhalatiepoeder Turbuhaler.png",
+        "gebruikMedicijn": "formoterol",
+        "color": "white",
+        "state": 0
+    },
+    {
+        "id": 69,
+        "inhalatorName": "Pulmicort inhalatiepoeder Turbuhaler",
+        "fabrikant": "AstraZeneca",
+        "afbeelding": "/inhalators/Pulmicort inhalatiepoeder Turbuhaler.png",
+        "gebruikMedicijn": "budesonide",
+        "color": "white",
+        "state": 0
+    },
+    {
+        "id": 70,
+        "inhalatorName": "Symbicort inhalatiepoeder Turbuhaler",
+        "fabrikant": "AstraZeneca",
+        "afbeelding": "/inhalators/Symbicort inhalatiepoeder Turbuhaler.png",
+        "gebruikMedicijn": "formoterol",
+        "color": "white",
+        "state": 0
+    },
+    {
+        "id": 71,
+        "inhalatorName": "Symbicort inhalatiepoeder Turbuhaler",
+        "fabrikant": "AstraZeneca",
+        "afbeelding": "/inhalators/Symbicort inhalatiepoeder Turbuhaler.png",
+        "gebruikMedicijn": "budesonide",
+        "color": "white",
+        "state": 0
+    },
+    {
+        "id": 72,
+        "inhalatorName": "Zonda",
+        "fabrikant": "Teva",
+        "afbeelding": "/inhalators/Zonda.png",
+        "gebruikMedicijn": "tiotropium",
+        "color": "white",
+        "state": 0
+    },
+    {
+        "id": 73,
+        "inhalatorName": "Avamys corticosteroid neusspray",
+        "fabrikant": "GSK",
+        "afbeelding": "/inhalators/Avamys corticosteroid neusspray.png",
+        "gebruikMedicijn": "corticosteroid neusspray",
+        "color": "white",
+        "state": 0
+    },
+    {
+        "id": 74,
+        "inhalatorName": "Corticosteroid neusspray",
+        "fabrikant": "",
+        "afbeelding": "/inhalators/Corticosteroid neusspray.png",
+        "gebruikMedicijn": "corticosteroid neusspray",
+        "color": "white",
+        "state": 0
+    }
+]
+```

@@ -11,72 +11,88 @@ class MedicationTableSeeder extends Seeder
      */
     public function run()
     {
-        DB::table('medications')->truncate();
+        DB::table('medications')->delete();
 
         $medication = [
             [
                 'name' => 'Salbutamol',
-                'type' => 'Luchtwegverwijders'
+                'type' => 'Luchtwegverwijders',
+                'subType' => 'Kortwerkende betamimetica'
             ], 
             [
                 'name' => 'Terbutaline',
-                'type' => 'Luchtwegverwijders'
+                'type' => 'Luchtwegverwijders',
+                'subType' => 'Kortwerkende betamimetica'
             ],
             [
                 'name' => 'Ipratropium',
-                'type' => 'Luchtwegverwijders'
+                'type' => 'Luchtwegverwijders',
+                'subType' => 'Kortwerkende anticholinergica'
             ],
             [
                 'name' => 'Formoterol',
-                'type' => 'Luchtwegverwijders'
+                'type' => 'Luchtwegverwijders',
+                'subType' => 'Langwerkende betamimetica'
             ],
             [
                 'name' => 'Indacaterol',
-                'type' => 'Luchtwegverwijders'
+                'type' => 'Luchtwegverwijders',
+                'subType' => 'Langwerkende betamimetica'
             ],
             [
                 'name' => 'Salmeterol',
-                'type' => 'Luchtwegverwijders'
+                'type' => 'Luchtwegverwijders',
+                'subType' => 'Langwerkende betamimetica'
             ],
             [
                 'name' => 'Olodaterol',
-                'type' => 'Luchtwegverwijders'
+                'type' => 'Luchtwegverwijders',
+                'subType' => 'Langwerkende betamimetica'
             ],
             [
                 'name' => 'Tiotropium',
-                'type' => 'Luchtwegverwijders'
+                'type' => 'Luchtwegverwijders',
+                'subType' => 'Langwerkende anticholinergica'
             ],
             [
                 'name' => 'Glycopyrronium',
-                'type' => 'Luchtwegverwijders'
+                'type' => 'Luchtwegverwijders',
+                'subType' => 'Langwerkende anticholinergica'
             ],
             [
                 'name' => 'Aclidinium',
-                'type' => 'Luchtwegverwijders'
+                'type' => 'Luchtwegverwijders',
+                'subType' => 'Langwerkende anticholinergica'
             ],
             [
                 'name' => 'Umeclidinium',
-                'type' => 'Luchtwegverwijders'
+                'type' => 'Luchtwegverwijders',
+                'subType' => 'Langwerkende anticholinergica'
             ],
             [
                 'name' => 'Beclomethason',
-                'type' => 'Luchtwegbeschermers'
+                'type' => 'Luchtwegbeschermers',
+                'subType' => ''
             ],
             [
                 'name' => 'Budesonide',
-                'type' => 'Luchtwegbeschermers'
+                'type' => 'Luchtwegbeschermers',
+                'subType' => ''
             ],
             [
                 'name' => 'Ciclesonide',
-                'type' => 'Luchtwegbeschermers'
+                'type' => 'Luchtwegbeschermers',
+                'subType' => ''
             ],
             [
                 'name' => 'Fluticasonpropionaat',
-                'type' => 'Luchtwegbeschermers'
+                'type' => 'Luchtwegbeschermers',
+                'subType' => ''
             ],
             [
                 'name' => 'Corticosteroid Neusspray',
-                'type' => 'Neusspray'
+                'type' => 'Neusspray',
+                'subType' => ''
             ],
         ];
 
@@ -84,6 +100,7 @@ class MedicationTableSeeder extends Seeder
             DB::table('medications')->insert([
                 'name' => $medication[$i]['name'],
                 'type' => $medication[$i]['type'],
+                'subType' => $medication[$i]['subType'],
             ]);
         }
     }

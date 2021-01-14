@@ -26,6 +26,9 @@ Route::post('login','AuthController@login');
 Route::post('refresh', 'AuthController@refresh');
 Route::middleware('auth:api')->post('logout', 'AuthController@logout');
 
+Route::get('inhalatorinformation', 'InhalatorInformationController@retrieve');
+Route::get('choseninhalators', 'InhalatorInformationController@show');
+
 Route::middleware('auth:api')->get('getpeakflowuser', 'PeakflowController@index');
 Route::middleware('auth:api')->post('createpeakflow', 'PeakflowController@create');
 Route::middleware('auth:api')->put('updatepeakflow/{id}', 'PeakflowController@update');

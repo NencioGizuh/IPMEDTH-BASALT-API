@@ -9,11 +9,13 @@ class Medication extends Model
     protected $fillable = [
         'name', 
         'type',
+        'subType'
     ];
 
     protected $visible = [
         'id',
         'name', 
         'type',
+        'subType'
     ];
 }
