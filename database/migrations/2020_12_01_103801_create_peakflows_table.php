@@ -15,6 +15,8 @@ class CreatePeakflowsTable extends Migration
     {
         Schema::create('peakflows', function (Blueprint $table) {
             $table->increments("id");
+            $table->bigInteger('user_id')->unsigned();
+            $table->foreign('user_id')->references('id')->on('users');
             $table->date("date");
             $table->time("time");
             $table->integer("measurement_one");
