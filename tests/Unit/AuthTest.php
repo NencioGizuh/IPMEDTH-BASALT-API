@@ -3,7 +3,6 @@
 namespace Tests\Unit;
 
 use App\User;
-use Laravel\Passport\Passport;
 use Tests\TestCase;
 
 class AuthTest extends TestCase
