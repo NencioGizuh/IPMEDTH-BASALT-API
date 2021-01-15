@@ -34,7 +34,7 @@ class PeakflowController extends Controller
             return response()->json("Not Found", 404);
         }
 
-        if ($peakflow["user_id"] === $user_id) {
+        if ($peakflow["user_id"] == $user_id) {
             $peakflow->update($request->all());
             return response()->json($peakflow, 200);
         } else {
@@ -50,7 +50,7 @@ class PeakflowController extends Controller
             return response()->json("Not Found", 404);
         }
 
-        if ($peakflow["user_id"] === $user_id) {
+        if ($peakflow["user_id"] == $user_id) {
             $peakflow->delete();
             return response()->json(null, 204);
         } else {
