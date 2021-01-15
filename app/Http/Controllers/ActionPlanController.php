@@ -11,7 +11,7 @@ class ActionPlanController extends Controller
         $user_id = $request->user()->id;
         $actionplan = ActionPlan::where('user_id', '=', $user_id)->get();
 
-        if(count($actionplan) === 0) {
+        if(count($actionplan) == 0) {
             return response()->json("Not Found", 404);
         } else {
             return response()->json($actionplan[0], 200);
@@ -51,7 +51,7 @@ class ActionPlanController extends Controller
         $user_id = $request->user()->id;
         $actionplan = ActionPlan::where('user_id', '=', $user_id)->get();
 
-        if(count($actionplan) === 0) {
+        if(count($actionplan) == 0) {
             return response()->json("Not Found", 404);
         } else {
             $actionplan = $actionplan[0];
@@ -64,7 +64,7 @@ class ActionPlanController extends Controller
         $user_id = $request->user()->id;
         $actionplan = ActionPlan::where('user_id', '=', $user_id)->get();
 
-        if(count($actionplan) === 0) {
+        if(count($actionplan) == 0) {
             return response()->json("Not Found", 404);
         } else {
             $actionplan = $actionplan[0];
