@@ -32,7 +32,7 @@ class PeakflowTest extends TestCase
                 "taken_medicines",
                 "explanation",
                 "created_at",
-                "updated_at" 
+                "updated_at"
             ],
             [
                 "id",
@@ -45,7 +45,7 @@ class PeakflowTest extends TestCase
                 "taken_medicines",
                 "explanation",
                 "created_at",
-                "updated_at" 
+                "updated_at"
             ]
         ]);
     }
